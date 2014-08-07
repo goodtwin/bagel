@@ -33,6 +33,18 @@ module.exports = function (grunt) {
         }]
       }
     },
+    shared_config: {
+      style: {
+        options: {
+          name: "globalConfig",
+          cssFormat: "dash"
+        },
+        src: "config.json",
+        dest: [
+          "style/config.scss"
+        ]
+      }
+    },
     sass: {
       dist: {
         files : {

@@ -5,3 +5,4 @@ dist/
 .node-version
 npm-debug.log
 .sass-cache/
+style/config.scss

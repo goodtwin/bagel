@@ -24,6 +24,7 @@
     "grunt-myth": "~0.1.1",
     "assemble": "~0.4.37",
     "bower": "~1.3",
-    "load-grunt-tasks": "~0.4.0"
+    "load-grunt-tasks": "~0.4.0",
+    "grunt-shared-config": "^0.3.6"
   }
 }

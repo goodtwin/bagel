@@ -18,9 +18,9 @@ $debug-mode:        false!default;
 /**
  * Elements
 **/
-$use-button:       false!default;
-$use-card:       false!default;
-$use-media:       false!default;
+$button-include:   false!default;
+$use-card:         false!default;
+$use-media:        false!default;
 $use-divider:      false!default;
 $use-header:       false!default;
 $use-icons:        false!default;
@@ -37,32 +37,15 @@ $use-step:         false!default;
 /**
  * Collections
 **/
-//$use-breadcrumb:   false!default;
 $use-form:         false!default;
 $use-grid:         false!default;
-//$use-menu:         false!default;
 $use-message:      false!default;
 $use-table:        false!default;
 $use-accordion:    false!default;
-//$use-chatroom:     false!default;
-//$use-dimmer:       false!default;
 $use-dropdown:     false!default;
 $use-modal:        false!default;
 $use-nag:          false!default;
 $use-popup:        false!default;
-//$use-rating:       false!default;
 $use-search:       false!default;
-//$use-shape:        false!default;
 $use-sidebar:      false!default;
 $use-tab:          false!default;
-//$use-transition:   false!default;
-//$use-video:        false!default;
-
-/**
- * Views
-**/
-//$use-comment:      false!default;
-//$use-feed:         false!default;
-//$use-item:         false!default;
-//$use-list:         false!default;
-//$use-statistic:    false!default;
