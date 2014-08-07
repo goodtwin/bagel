@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     style: 'style',
     docs: 'docs',
     dist: {
-      root: 'dist',
+      root: ' dist',
       docs: 'dist/docs',
       style: 'dist/style'
     }
@@ -162,6 +162,6 @@ grunt.registerTask('default', ['build']);
 grunt.registerTask('distcss', ['sass:dist', 'myth:dist']);
 grunt.registerTask('doccss', ['sass:docs', 'myth:docs']);
 grunt.registerTask('dist', ['clean:dist', 'copy:dist', 'distcss', 'cssmin']);
-grunt.registerTask('build', ['clean', 'dist', 'clean:docs', 'copy:docs', 'doccss', 'assemble']);
+grunt.registerTask('build', ['clean', 'shared_config', 'dist', 'clean:docs', 'copy:docs', 'doccss', 'assemble']);
 
 };

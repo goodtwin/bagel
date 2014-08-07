@@ -1,5 +1,8 @@
 {
   "button": {
-    "include": true
+    "include": true,
+    "theme" : {
+      "prototype": true
+    }
   }
 }
