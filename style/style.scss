@@ -1,18 +1,7 @@
 /**
-* First need to grab our component config & variables.
+* First need to grab our component config
 * These will override any defaults
 * Set within source.
 **/
-@import "../src/defaults";
 @import "config";
-@import "variables/init";
-
-/**
-* Bring in the abstractions
-**/
-@import "../src/import";
-
-/**
-* Our theme + overrides
-**/
 @import "import";
