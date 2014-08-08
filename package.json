@@ -25,6 +25,6 @@
     "assemble": "~0.4.37",
     "bower": "~1.3",
     "load-grunt-tasks": "~0.4.0",
-    "grunt-shared-config": "^0.3.6"
+    "grunt-shared-config": "https://github.com/goodtwin/grunt-shared-config/archive/1f0a6e12b365ad9bda3e411f2a2cb74683df1d2e.tar.gz"
   }
 }
