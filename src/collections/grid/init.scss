@@ -1,1 +1,5 @@
 @import "grid";
+
+@if $grid-include {
+  @include grid-src;
+}

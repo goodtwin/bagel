@@ -54,3 +54,55 @@ step:
   include: true
   theme:
     prototype: true
+dropdown:
+  include: true
+  theme:
+    prototype: true
+form:
+  include: true
+  theme:
+    prototype: true
+menu:
+  include: true
+  theme:
+    prototype: true
+message:
+  include: true
+  theme:
+    prototype: true
+modal:
+  include: true
+  theme:
+    prototype: true
+nag:
+  include: true
+  theme:
+    prototype: true
+popup:
+  include: true
+  theme:
+    prototype: true
+search:
+  include: true
+  theme:
+    prototype: true
+sidebar:
+  include: true
+  theme:
+    prototype: true
+accordion:
+  include: true
+  theme:
+    prototype: true
+grid:
+  include: true
+  theme:
+    prototype: true
+tab:
+  include: true
+  theme:
+    prototype: true
+table:
+  include: true
+  theme:
+    prototype: true

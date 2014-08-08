@@ -9,45 +9,46 @@
  *
  */
 
+@mixin tab-src {
+  /*******************************
+             UI Tabs
+  *******************************/
 
-/*******************************
-           UI Tabs
-*******************************/
-
-.ui.tab {
-  display: none;
-}
+  .ui.tab {
+    display: none;
+  }
 
 
-/*******************************
-             States
-*******************************/
+  /*******************************
+               States
+  *******************************/
 
-/*--------------------
-       Active
----------------------*/
+  /*--------------------
+         Active
+  ---------------------*/
 
-.ui.tab.active,
-.ui.tab.open {
-  display: block;
-}
+  .ui.tab.active,
+  .ui.tab.open {
+    display: block;
+  }
 
-/*--------------------
-       Loading
----------------------*/
+  /*--------------------
+         Loading
+  ---------------------*/
 
-.ui.tab.loading {
-  position: relative;
-  overflow: hidden;
-  display: block;
-}
-.ui.tab.loading * {
-  position: relative !important;
-}
-.ui.tab.loading:after {
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  visibility: visible;
+  .ui.tab.loading {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  .ui.tab.loading * {
+    position: relative !important;
+  }
+  .ui.tab.loading:after {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
 }

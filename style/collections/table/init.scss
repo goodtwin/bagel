@@ -1,1 +1,5 @@
 @import "table";
+
+@if $table-theme-prototype {
+  @include table-prototype;
+}

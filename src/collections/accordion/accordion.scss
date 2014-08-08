@@ -8,88 +8,89 @@
  * http://opensource.org/licenses/MIT
  *
  */
+@mixin accordion-src {
+  /*******************************
+              Accordion
+  *******************************/
 
-/*******************************
-            Accordion
-*******************************/
+  .ui.accordion,
+  .ui.accordion .accordion {
+    max-width: 100%;
+  }
 
-.ui.accordion,
-.ui.accordion .accordion {
-  max-width: 100%;
-}
+  .ui.accordion .title,
+  .ui.accordion .accordion .title {
+  	cursor: pointer;
+      margin: 0em;
+  }
+  .ui.accordion .title:first-child,
+  .ui.accordion .accordion .title:first-child {
+  	border-top: none;
+  }
 
-.ui.accordion .title,
-.ui.accordion .accordion .title {
-	cursor: pointer;
+
+  /* Content */
+  .ui.accordion .content,
+  .ui.accordion .accordion .content {
+    display: none;
     margin: 0em;
-}
-.ui.accordion .title:first-child,
-.ui.accordion .accordion .title:first-child {
-	border-top: none;
-}
+  }
+
+  /* Arrow */
+  .ui.accordion .title .dropdown.icon,
+  .ui.accordion .accordion .title .dropdown.icon {
+    display: inline-block;
+    float: none;
+  }
 
 
-/* Content */
-.ui.accordion .content,
-.ui.accordion .accordion .content {
-  display: none;
-  margin: 0em;
-}
+  /*******************************
+              Types
+  *******************************/
 
-/* Arrow */
-.ui.accordion .title .dropdown.icon,
-.ui.accordion .accordion .title .dropdown.icon {
-  display: inline-block;
-  float: none;
-}
+  /*--------------
+       Basic
+  ---------------*/
 
+  .ui.basic.accordion {
+    background-color: transparent;
+    box-shadow: none;
+  }
 
-/*******************************
-            Types
-*******************************/
+  .ui.basic.accordion .title,
+  .ui.basic.accordion .accordion .title {
+    background-color: transparent;
+    border-top: none;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
 
-/*--------------
-     Basic
----------------*/
-
-.ui.basic.accordion {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.ui.basic.accordion .title,
-.ui.basic.accordion .accordion .title {
-  background-color: transparent;
-  border-top: none;
-  padding-left: 0em;
-  padding-right: 0em;
-}
-
-.ui.basic.accordion .active.title,
-.ui.basic.accordion .accordion .active.title {
-  background-color: transparent;
-}
+  .ui.basic.accordion .active.title,
+  .ui.basic.accordion .accordion .active.title {
+    background-color: transparent;
+  }
 
 
-/*--------------
-     Active
----------------*/
+  /*--------------
+       Active
+  ---------------*/
 
-.ui.accordion .active.content,
-.ui.accordion .accordion .active.content {
-  display: block;
-}
+  .ui.accordion .active.content,
+  .ui.accordion .accordion .active.content {
+    display: block;
+  }
 
 
-/*******************************
-           Variations
-*******************************/
+  /*******************************
+             Variations
+  *******************************/
 
-/*--------------
-     Fluid
----------------*/
+  /*--------------
+       Fluid
+  ---------------*/
 
-.ui.fluid.accordion,
-.ui.fluid.accordion .accordion {
-  width: 100%;
+  .ui.fluid.accordion,
+  .ui.fluid.accordion .accordion {
+    width: 100%;
+  }
 }
