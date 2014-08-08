@@ -1,1 +1,5 @@
 @import "nag";
+
+@if $nag-include {
+  @include nag-src;
+}

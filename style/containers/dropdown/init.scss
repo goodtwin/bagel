@@ -1,1 +1,5 @@
 @import "dropdown";
+
+@if $dropdown-theme-prototype {
+  @include dropdown-prototype;
+}

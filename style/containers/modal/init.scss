@@ -1,1 +1,5 @@
 @import "modal";
+
+@if $modal-theme-prototype {
+  @include modal-prototype;
+}

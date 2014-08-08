@@ -1,1 +1,5 @@
 @import "dropdown";
+
+@if $dropdown-include {
+  @include dropdown-src;
+}

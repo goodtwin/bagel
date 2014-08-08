@@ -9,114 +9,115 @@
  *
  */
 
+@mixin form-src {
+  /*******************************
+             Standard
+  *******************************/
 
-/*******************************
-           Standard
-*******************************/
+  /*--------------------
+          Form
+  ---------------------*/
 
-/*--------------------
-        Form
----------------------*/
+  .ui.form {
+    position: relative;
+    max-width: 100%;
+  }
+  .ui.form :first-child {
+    margin-top: 0em;
+  }
+  .ui.form :last-child {
+    margin-bottom: 0em;
+  }
 
-.ui.form {
-  position: relative;
-  max-width: 100%;
-}
-.ui.form :first-child {
-  margin-top: 0em;
-}
-.ui.form :last-child {
-  margin-bottom: 0em;
-}
+  /*--------------------
+          Content
+  ---------------------*/
 
-/*--------------------
-        Content
----------------------*/
+  /*--------------------
+          Field
+  ---------------------*/
 
-/*--------------------
-        Field
----------------------*/
+  .ui.form .field {
+    clear: both;
+  }
 
-.ui.form .field {
-  clear: both;
-}
+  /*--------------------
+          Labels
+  ---------------------*/
 
-/*--------------------
-        Labels
----------------------*/
+  .ui.form .field > label {
+    display: block;
+  }
 
-.ui.form .field > label {
-  display: block;
-}
-
-/*--------------------
-    Standard Inputs
----------------------*/
-
-
-.ui.form textarea,
-.ui.form input[type="text"],
-.ui.form input[type="email"],
-.ui.form input[type="date"],
-.ui.form input[type="password"],
-.ui.form input[type="number"],
-.ui.form input[type="url"],
-.ui.form input[type="tel"],
-.ui.form .ui.input {
-  width: 100%;
-}
-
-.ui.form textarea,
-.ui.form input[type="text"],
-.ui.form input[type="email"],
-.ui.form input[type="date"],
-.ui.form input[type="password"],
-.ui.form input[type="number"],
-.ui.form input[type="url"],
-.ui.form input[type="tel"] {
-  outline: none;
-}
-
-.ui.form textarea,
-.ui.form input[type="checkbox"] {
-  vertical-align: top;
-}
-
-/*--------------------
-       Dividers
----------------------*/
-
-.ui.form .divider {
-  clear: both;
-}
+  /*--------------------
+      Standard Inputs
+  ---------------------*/
 
 
-/*--------------------
-   Types of Messages
----------------------*/
+  .ui.form textarea,
+  .ui.form input[type="text"],
+  .ui.form input[type="email"],
+  .ui.form input[type="date"],
+  .ui.form input[type="password"],
+  .ui.form input[type="number"],
+  .ui.form input[type="url"],
+  .ui.form input[type="tel"],
+  .ui.form .ui.input {
+    width: 100%;
+  }
 
-.ui.form .info.message,
-.ui.form .warning.message,
-.ui.form .error.message {
-  display: none;
-}
+  .ui.form textarea,
+  .ui.form input[type="text"],
+  .ui.form input[type="email"],
+  .ui.form input[type="date"],
+  .ui.form input[type="password"],
+  .ui.form input[type="number"],
+  .ui.form input[type="url"],
+  .ui.form input[type="tel"] {
+    outline: none;
+  }
 
-/* Assumptions */
-.ui.form .message:first-child {
-  margin-top: 0px;
-}
+  .ui.form textarea,
+  .ui.form input[type="checkbox"] {
+    vertical-align: top;
+  }
 
-/*--------------------
-   Validation Prompt
----------------------*/
+  /*--------------------
+         Dividers
+  ---------------------*/
 
-.ui.form .field .prompt.label {
-  white-space: nowrap;
-}
+  .ui.form .divider {
+    clear: both;
+  }
 
-.ui.form .inline.field .prompt:before {
-  bottom: auto;
-  right: auto;
-  top: 50%;
-  left: 0em;
+
+  /*--------------------
+     Types of Messages
+  ---------------------*/
+
+  .ui.form .info.message,
+  .ui.form .warning.message,
+  .ui.form .error.message {
+    display: none;
+  }
+
+  /* Assumptions */
+  .ui.form .message:first-child {
+    margin-top: 0px;
+  }
+
+  /*--------------------
+     Validation Prompt
+  ---------------------*/
+
+  .ui.form .field .prompt.label {
+    white-space: nowrap;
+  }
+
+  .ui.form .inline.field .prompt:before {
+    bottom: auto;
+    right: auto;
+    top: 50%;
+    left: 0em;
+  }
 }

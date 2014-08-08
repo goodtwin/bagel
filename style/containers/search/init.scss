@@ -1,1 +1,5 @@
 @import "search";
+
+@if $search-theme-prototype {
+  @include search-prototype;
+}

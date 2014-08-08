@@ -1,1 +1,5 @@
 @import "menu";
+
+@if $menu-theme-prototype {
+  @include menu-prototype;
+}

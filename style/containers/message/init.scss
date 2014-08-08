@@ -1,1 +1,5 @@
 @import "message";
+
+@if $message-theme-prototype {
+  @include message-prototype;
+}

@@ -1,57 +1,59 @@
-/*******************************
-            States
-*******************************/
+@mixin form-src-states {
+  /*******************************
+              States
+  *******************************/
 
 
-/*--------------------
-        Focus
----------------------*/
+  /*--------------------
+          Focus
+  ---------------------*/
 
-/*--------------------
-        Error
----------------------*/
+  /*--------------------
+          Error
+  ---------------------*/
 
-/* On Form */
-.ui.form.warning .warning.message {
-  display: block;
-}
+  /* On Form */
+  .ui.form.warning .warning.message {
+    display: block;
+  }
 
-/*--------------------
-        Warning
----------------------*/
+  /*--------------------
+          Warning
+  ---------------------*/
 
-/* On Form */
-.ui.form.error .error.message {
-  display: block;
-}
+  /* On Form */
+  .ui.form.error .error.message {
+    display: block;
+  }
 
-/*--------------------
-  Empty (Placeholder)
----------------------*/
+  /*--------------------
+    Empty (Placeholder)
+  ---------------------*/
 
-/*--------------------
-       Disabled
----------------------*/
+  /*--------------------
+         Disabled
+  ---------------------*/
 
-.ui.form .field.disabled :disabled {
-  opacity: 1;
-}
+  .ui.form .field.disabled :disabled {
+    opacity: 1;
+  }
 
 
-/*--------------------
-     Loading State
----------------------*/
+  /*--------------------
+       Loading State
+  ---------------------*/
 
-/* On Form */
-.ui.form.loading {
-  position: relative;
-}
-.ui.form.loading:after {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  content: '';
-  width: 100%;
-  height: 100%;
-  visibility: visible;
+  /* On Form */
+  .ui.form.loading {
+    position: relative;
+  }
+  .ui.form.loading:after {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
 }

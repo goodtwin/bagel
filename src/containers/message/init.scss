@@ -1,1 +1,5 @@
 @import "message";
+
+@if $message-include {
+  @include message-src;
+}
