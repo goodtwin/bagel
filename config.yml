@@ -1,0 +1,56 @@
+button:
+  include: true
+  theme:
+    prototype: true
+card:
+  include: true
+  theme:
+    prototype: true
+checkbox:
+  include: true
+  theme:
+    prototype: true
+divider:
+  include: true
+  theme:
+    prototype: true
+icons:
+  include: true
+  theme:
+    prototype: true
+image:
+  include: true
+  theme:
+    prototype: true
+input:
+  include: true
+  theme:
+    prototype: true
+label:
+  include: true
+  theme:
+    prototype: true
+loader:
+  include: true
+  theme:
+    prototype: true
+media:
+  include: true
+  theme:
+    prototype: true
+progress:
+  include: true
+  theme:
+    prototype: true
+reveal:
+  include: true
+  theme:
+    prototype: true
+segment:
+  include: true
+  theme:
+    prototype: true
+step:
+  include: true
+  theme:
+    prototype: true

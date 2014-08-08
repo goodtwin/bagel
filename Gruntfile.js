@@ -23,7 +23,7 @@ module.exports = function (grunt) {
           flatten: false,
           partials: ['<%= globalConfig.docs  %>/partials/*.hbs'],
           layout: '<%= globalConfig.docs  %>/layouts/default.hbs',
-          data: ['<%= globalConfig.docs  %>/data/*.{json,yml}']
+          data: ['<%= globalConfig.docs  %>/data/*.{json,yml}','config.{json,yml}']
         },
         files: [{
           expand: true,
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
           name: "globalConfig",
           cssFormat: "dash"
         },
-        src: "config.json",
+        src: "config.yml",
         dest: [
           "style/config.scss"
         ]

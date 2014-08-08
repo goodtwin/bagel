@@ -22,9 +22,9 @@
     "grunt-contrib-cssmin": "~0.9.0",
     "grunt-contrib-sass": "^0.7.3",
     "grunt-myth": "~0.1.1",
-    "assemble": "~0.4.37",
     "bower": "~1.3",
     "load-grunt-tasks": "~0.4.0",
-    "grunt-shared-config": "https://github.com/goodtwin/grunt-shared-config/archive/1f0a6e12b365ad9bda3e411f2a2cb74683df1d2e.tar.gz"
+    "grunt-shared-config": "https://github.com/goodtwin/grunt-shared-config/archive/1f0a6e12b365ad9bda3e411f2a2cb74683df1d2e.tar.gz",
+    "assemble": "~0.4.41"
   }
 }
