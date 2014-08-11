@@ -22,10 +22,13 @@
 
 <body id="example" class="ui sidebar-containment">
 	<div class="ui large inverted fixed left vertical menu" id="menu" overflow scrollable>
-		{{#each pages}}
+		{{#each tags}}
+			<div class="header item">{{ tag }}</div>
+			{{#withSort pages "data.title"}}
 				<div class="item">
 					<a href="{{relative .. /page.dest this.dest}}">{{ data.title }}</a>
 				</div>
+			{{/withSort}}
 		{{/each }}
 	</div>
 	{{> body  }}
