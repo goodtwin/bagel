@@ -1,1 +1,5 @@
 @import "checkbox";
+
+@if $checkbox-include {
+  @include checkbox-src;
+}

@@ -9,110 +9,112 @@
  *
  */
 
-/*******************************
-            Step
-*******************************/
+@mixin step-src {
+  /*******************************
+              Step
+  *******************************/
 
-.ui.step,
-.ui.steps .step {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-}
-.ui.step:after,
-.ui.steps .step:after {
-  position: absolute;
-  z-index: 2;
-  content: '';
-  top: 0em;
-  width: 0em;
-  height: 0em;
-}
+  .ui.step,
+  .ui.steps .step {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+  }
+  .ui.step:after,
+  .ui.steps .step:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    top: 0em;
+    width: 0em;
+    height: 0em;
+  }
 
-/*******************************
-            Types
-*******************************/
+  /*******************************
+              Types
+  *******************************/
 
-.ui.vertical.steps {
-  overflow: visible;
-}
-.ui.vertical.steps .step {
-  display: block;
-}
+  .ui.vertical.steps {
+    overflow: visible;
+  }
+  .ui.vertical.steps .step {
+    display: block;
+  }
 
-/* Arrow */
-.ui.vertical.steps .step:after {
-  display: none;
-}
+  /* Arrow */
+  .ui.vertical.steps .step:after {
+    display: none;
+  }
 
-/* Active Arrow */
-.ui.vertical.steps .active.step:after {
-  display: block;
-}
-
-
-
-/*******************************
-            Group
-*******************************/
-
-.ui.steps {
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0em;
-  overflow: hidden;
-  line-height: 1;
-}
-
-.ui.steps .step:last-child {
-  margin-right: 0em;
-}
-.ui.steps .step:last-child:after {
-  display: none;
-}
+  /* Active Arrow */
+  .ui.vertical.steps .active.step:after {
+    display: block;
+  }
 
 
-/*******************************
-           Variations
-*******************************/
 
-/* Attached */
-.attached.ui.steps {
-  margin: 0em;
-}
+  /*******************************
+              Group
+  *******************************/
 
-/* Evenly divided  */
-.ui.one.steps,
-.ui.two.steps,
-.ui.three.steps,
-.ui.four.steps,
-.ui.five.steps,
-.ui.six.steps,
-.ui.seven.steps,
-.ui.eight.steps {
-  display: block;
-}
-.ui.one.steps > .step {
-  @extend .one-whole;
-}
-.ui.two.steps > .step {
-  @extend .one-half;
-}
-.ui.three.steps > .step {
-  @extend .one-third;
-}
-.ui.four.steps > .step {
-  @extend .one-quarter;
-}
-.ui.five.steps > .step {
-  @extend .one-fifth;
-}
-.ui.six.steps > .step {
-  @extend .one-sixth;
-}
-.ui.seven.steps > .step {
-  @extend .one-seventh;
-}
-.ui.eight.steps > .step {
-  @extend .one-eighth;
+  .ui.steps {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0em;
+    overflow: hidden;
+    line-height: 1;
+  }
+
+  .ui.steps .step:last-child {
+    margin-right: 0em;
+  }
+  .ui.steps .step:last-child:after {
+    display: none;
+  }
+
+
+  /*******************************
+             Variations
+  *******************************/
+
+  /* Attached */
+  .attached.ui.steps {
+    margin: 0em;
+  }
+
+  /* Evenly divided  */
+  .ui.one.steps,
+  .ui.two.steps,
+  .ui.three.steps,
+  .ui.four.steps,
+  .ui.five.steps,
+  .ui.six.steps,
+  .ui.seven.steps,
+  .ui.eight.steps {
+    display: block;
+  }
+  .ui.one.steps > .step {
+    @extend .one-whole;
+  }
+  .ui.two.steps > .step {
+    @extend .one-half;
+  }
+  .ui.three.steps > .step {
+    @extend .one-third;
+  }
+  .ui.four.steps > .step {
+    @extend .one-quarter;
+  }
+  .ui.five.steps > .step {
+    @extend .one-fifth;
+  }
+  .ui.six.steps > .step {
+    @extend .one-sixth;
+  }
+  .ui.seven.steps > .step {
+    @extend .one-seventh;
+  }
+  .ui.eight.steps > .step {
+    @extend .one-eighth;
+  }
 }

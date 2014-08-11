@@ -1,1 +1,5 @@
 @import "card";
+
+@if $card-theme-prototype {
+  @include card-prototype;
+}

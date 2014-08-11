@@ -1,3 +1,5 @@
+@import "defaults";
+
 /*!*
 * Donut UI
 * Copyright 2013 GoodTwin Design Inc.
@@ -21,16 +23,16 @@
 * http://opensource.org/licenses/MIT
 */
 
-/*------------------------------------
-    $OBJECTS AND ABSTRACTIONS
-------------------------------------*/
+/*******************************
+    Objects and Abstractions
+*******************************/
 @import "defaults/init";
 @import "functions/init";
 @import "utilities/init";
 
-/*------------------------------------
+/*******************************
     Elements
-------------------------------------*/
+*******************************/
 @import "elements/button/init";
 @import "elements/card/init";
 @import "elements/media/init";
@@ -46,25 +48,18 @@
 @import "elements/segment/init";
 @import "elements/step/init";
 
-/*------------------------------------
+/*******************************
     Collections
-------------------------------------*/
-// @import "collections/breadcrumb/init";
+*******************************/
 @import "collections/grid/init";
 @import "collections/table/init";
 @import "collections/accordion/init";
 @import "collections/card/init";
 @import "collections/tab/init";
-// @import "modules/chatroom/init";
-// @import "modules/dimmer/init";
-// @import "modules/rating/init";
-// @import "modules/shape/init";
-// @import "modules/transition/init";
-// @import "modules/video/init";
 
-/*------------------------------------
+/*******************************
     Containers
-------------------------------------*/
+*******************************/
 @import "containers/form/init";
 @import "containers/sidebar/init";
 @import "containers/modal/init";
@@ -74,31 +69,3 @@
 @import "containers/nag/init";
 @import "containers/popup/init";
 @import "containers/search/init";
-
-/*------------------------------------
-    Views
-------------------------------------*/
-// @import "views/comment/init";
-// @import "views/feed/init";
-// @import "views/item/init";
-// @import "views/list/init";
-// @import "views/statistic/init";
-
-/*------------------------------------
-    Modules
-------------------------------------*/
-// @import "modules/accordion/init";
-// @import "modules/chatroom/init";
-// @import "modules/checkbox/init";
-// @import "modules/dimmer/init";
-// @import "modules/dropdown/init";
-// @import "modules/modal/init";
-// @import "modules/nag/init";
-// @import "modules/popup/init";
-// @import "modules/rating/init";
-// @import "modules/search/init";
-// @import "modules/shape/init";
-// @import "modules/sidebar/init";
-// @import "modules/tab/init";
-// @import "modules/transition/init";
-// @import "modules/video/init";

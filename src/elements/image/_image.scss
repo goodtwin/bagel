@@ -9,90 +9,91 @@
  *
  */
 
+@mixin image-src {
+  /*******************************
+               Image
+  *******************************/
 
-/*******************************
-             Image
-*******************************/
-
-.ui.image {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 100%;
-}
-img.ui.image {
-  display: block;
-  background: none;
-}
-.ui.image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/*******************************
-            States
-*******************************/
-
-
-.ui.disabled.image {
-  cursor: default;
-}
-
-
-/*******************************
-          Variations
-*******************************/
-
-/*--------------
-     Fluid
----------------*/
-
-.ui.fluid.images,
-.ui.fluid.image,
-.ui.fluid.images img,
-.ui.fluid.image img {
-  display: block;
-  width: 100%;
-}
-
-
-/*--------------
-     Avatar
----------------*/
-
-.ui.avatar.images .image,
-.ui.avatar.images img,
-.ui.avatar.image img,
-.ui.avatar.image {
+  .ui.image {
+    position: relative;
     display: inline-block;
-}
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  img.ui.image {
+    display: block;
+    background: none;
+  }
+  .ui.image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*******************************
+              States
+  *******************************/
+
+
+  .ui.disabled.image {
+    cursor: default;
+  }
+
+
+  /*******************************
+            Variations
+  *******************************/
+
+  /*--------------
+       Fluid
+  ---------------*/
+
+  .ui.fluid.images,
+  .ui.fluid.image,
+  .ui.fluid.images img,
+  .ui.fluid.image img {
+    display: block;
+    width: 100%;
+  }
+
+
+  /*--------------
+       Avatar
+  ---------------*/
+
+  .ui.avatar.images .image,
+  .ui.avatar.images img,
+  .ui.avatar.image img,
+  .ui.avatar.image {
+      display: inline-block;
+  }
 
 
 
-/*-------------------
-       Floated
---------------------*/
+  /*-------------------
+         Floated
+  --------------------*/
 
-.ui.floated.image,
-.ui.floated.images {
-  float: left;
-}
-.ui.right.floated.images,
-.ui.right.floated.image {
-  float: right;
-}
+  .ui.floated.image,
+  .ui.floated.images {
+    float: left;
+  }
+  .ui.right.floated.images,
+  .ui.right.floated.image {
+    float: right;
+  }
 
 
-/*******************************
-              Groups
-*******************************/
+  /*******************************
+                Groups
+  *******************************/
 
-.ui.images {
-  font-size: 0em;
-}
+  .ui.images {
+    font-size: 0em;
+  }
 
-.ui.images .image,
-.ui.images img {
-  display: inline-block;
+  .ui.images .image,
+  .ui.images img {
+    display: inline-block;
+  }
 }

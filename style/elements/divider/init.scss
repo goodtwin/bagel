@@ -1,1 +1,5 @@
 @import "divider";
+
+@if $divider-theme-prototype {
+  @include divider-prototype;
+}

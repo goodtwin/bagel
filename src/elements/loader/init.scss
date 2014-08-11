@@ -1,1 +1,5 @@
 @import "loader";
+
+@if $loader-include {
+  @include loader-src;
+}

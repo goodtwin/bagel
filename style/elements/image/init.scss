@@ -1,1 +1,5 @@
 @import "image";
+
+@if $image-theme-prototype {
+  @include image-prototype;
+}

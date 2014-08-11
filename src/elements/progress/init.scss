@@ -1,1 +1,5 @@
 @import "progress";
+
+@if $progress-include {
+  @include progress-src;
+}

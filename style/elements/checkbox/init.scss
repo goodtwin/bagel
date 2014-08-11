@@ -1,1 +1,5 @@
 @import "checkbox";
+
+@if $checkbox-theme-prototype {
+  @include checkbox-prototype;
+}

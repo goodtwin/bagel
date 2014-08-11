@@ -1,2 +1,7 @@
 @import "icons";
 @import "basic.icon";
+
+@if $icons-include {
+  @include basic-icon-src;
+  @include icons-src;
+}

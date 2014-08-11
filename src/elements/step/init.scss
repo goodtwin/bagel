@@ -1,1 +1,5 @@
 @import "step";
+
+@if $step-include {
+  @include step-src;
+}

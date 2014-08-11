@@ -1,1 +1,5 @@
 @import "media";
+
+@if $media-include {
+  @include media-src;
+}

@@ -1,1 +1,5 @@
 @import "divider";
+
+@if $divider-include {
+  @include divider-src;
+}
