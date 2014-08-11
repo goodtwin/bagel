@@ -1,0 +1,5 @@
+@import "flexbox";
+
+@if $flexbox-include {
+  @include flexbox-src;
+}

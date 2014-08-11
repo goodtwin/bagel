@@ -1,0 +1,90 @@
+---
+css         : 'display'
+title       : 'Display Abstractions'
+description : 'Display helpers for layout concerns.'
+type        : 'Layout Abstractions'
+---
+<div class="main container">
+  <h2 class="ui dividing header">Padding &amp; Margin</h2>
+
+  <div class="follow example">
+    <h4 class="ui header">Soft (padding)</h4>
+    <p>Soft creates different levels of padding.</p>
+    <p class="ui ignored message">'vertical--center' class used here to normalize text display and inline-block display. Padding is often used on items already with display: inline-block;</p>
+    <div>
+      <span class="vertical--center soft" style="border: 1px solid #ccc;">Soft</span>
+    </div>
+    <div>
+      <span class="vertical--center soft-half" style="border: 1px solid #ccc;">Soft Half</span>
+    </div>
+    <div>
+      <span class="vertical--center soft-double" style="border: 1px solid #ccc;">Soft Double</span>
+    </div>
+    <div>
+      <span class="vertical--center soft-grid" style="border: 1px solid #ccc;">Soft with Grid Padding</span>
+    </div>
+    <div>
+      <span class="vertical--center soft--left" style="border: 1px solid #ccc;">Soft (Left Only)</span>
+    </div>
+    <div>
+      <span class="vertical--center soft--right" style="border: 1px solid #ccc;">Soft (Right Only)</span>
+    </div>
+    <div>
+      <span class="vertical--center soft--top" style="border: 1px solid #ccc;">Soft (Top Only)</span>
+    </div>
+    <div>
+      <span class="vertical--center soft--bottom" style="border: 1px solid #ccc;">Soft (Bottom Only)</span>
+    </div>
+    <div>
+      <span class="vertical--center soft--sides" style="border: 1px solid #ccc;">Soft Sides</span>
+    </div>
+    <div>
+      <span class="vertical--center soft--ends" style="border: 1px solid #ccc;">Soft Ends</span>
+    </div>
+    <p>Soft amounts can be mixed with subsets.</p>
+    <div>
+      <span class="vertical--center soft-double--ends" style="border: 1px solid #ccc;">Soft Double Ends</span>
+    </div>
+  </div>
+
+  <div class="follow example">
+    <h4 class="ui header">Hard (padding)</h4>
+    <p>Eliminates padding on items that have default/component padding.</p>
+    <div class="soft--ends">
+      <div class="ui button hard">
+        Hard Button
+      </div>
+    </div>
+    <div class="soft--ends">
+      <div class="ui button hard--sides">
+        Hard Sides
+      </div>
+    </div>
+    <div class="soft--ends">
+      <div class="ui button hard--ends">
+        Hard Ends
+      </div>
+    </div>
+    <div class="soft--ends">
+      <div class="ui button hard--left">
+        Hard Left
+      </div>
+    </div>
+    <div class="soft--ends">
+      <div class="ui button hard--right">
+        Hard Right
+      </div>
+    </div>
+    <div class="soft--ends">
+      <div class="ui button hard--top">
+        Hard Top
+      </div>
+    </div>
+    <div class="soft--ends">
+      <div class="ui button hard--bottom">
+        Hard Bottom
+      </div>
+    </div>
+  </div>
+
+</div>
