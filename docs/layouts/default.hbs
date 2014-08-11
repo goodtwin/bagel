@@ -26,7 +26,7 @@
 			<div class="header item">{{capitalizeEach tag }}</div>
 			{{#withSort pages "data.title"}}
 				<div class="item">
-					<a href="{{relative .. /page.dest this.dest}}">{{ data.title }}</a>
+					<a href="{{relative ../../page.dest this.dest}}">{{ data.title }}</a>
 				</div>
 			{{/withSort}}
 		{{/each }}
