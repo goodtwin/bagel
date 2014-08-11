@@ -12,15 +12,18 @@
     position: absolute!important;
     width:1px!important;
 }
-.accessibility,
-.visuallyhidden{
-    @include accessibility;
-}
-@each $state in palm, lap, lap-and-up, portable, desk, desk-wide, under-desk-wide{
-    @include media-query(#{$state}){
-        .accessibility--#{$state},
-        .visuallyhidden--#{$state}{
-            @include accessibility;
-        }
-    }
+
+@mixin visibility-src {
+  .accessibility,
+  .visuallyhidden{
+      @include accessibility;
+  }
+  @each $state in palm, lap, lap-and-up, portable, desk, desk-wide, under-desk-wide{
+      @include media-query(#{$state}){
+          .accessibility--#{$state},
+          .visuallyhidden--#{$state}{
+              @include accessibility;
+          }
+      }
+  }
 }

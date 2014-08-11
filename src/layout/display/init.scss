@@ -7,13 +7,13 @@
 @import "type";
 @import "visibility";
 
-@if $display-include {
-  @include clearfix-include;
-  @include display-include;
-  @include margin-include;
-  @include padding-include;
-  @include position-include;
-  @include size-include;
-  @include type-include;
-  @include visibility-include;
+@if $layout-display-include {
+  @include clearfix-src;
+  @include display-src;
+  @include margin-src;
+  @include padding-src;
+  @include position-src;
+  @include size-src;
+  @include type-src;
+  @include visibility-src;
 }

@@ -1,11 +1,13 @@
-[display-table] {
-    display: table!important;
-}
+@mixin display-src {
+  [display-table] {
+      display: table!important;
+  }
 
-[display-table__cell] {
-    display: table-cell!important;
-}
+  [display-table__cell] {
+      display: table-cell!important;
+  }
 
-[overflow][scrollable] {
-  overflow: auto;
+  [overflow][scrollable] {
+    overflow: auto;
+  }
 }

@@ -1,3 +1,5 @@
-.caps{
-    text-transform:uppercase!important;
+@mixin type-src {
+  .caps{
+      text-transform:uppercase!important;
+  }
 }
