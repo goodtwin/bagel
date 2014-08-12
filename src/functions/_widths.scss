@@ -4,7 +4,7 @@
 
 @mixin initialize-semantic-widths($namespace:""){
 
-  /**
+    /**
      * Whole.
      */
     .#{$namespace}one-whole           { width: 100% !important; }
@@ -109,3 +109,14 @@
 
 
 @include initialize-semantic-widths;
+
+@each $alias, $condition in $breakpoints {
+
+  @if use-mq($alias, widths) {
+
+      @include media-query(#{$alias}) {
+        @include initialize-semantic-widths('#{$alias}--');
+      }
+      
+    }
+}
