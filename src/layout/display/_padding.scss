@@ -1,41 +1,61 @@
-@mixin padding-src {
-  .soft          	 	{ padding:       $base-spacing-unit!important; }
-  .soft--top      	{ padding-top:   $base-spacing-unit!important; }
-  .soft--right    	{ padding-right: $base-spacing-unit!important; }
-  .soft--bottom   	{ padding-bottom:$base-spacing-unit!important; }
-  .soft--left     	{ padding-left:  $base-spacing-unit!important; }
-  .soft--ends     	{ padding-top:   $base-spacing-unit!important; padding-bottom:$base-spacing-unit!important; }
-  .soft--sides    	{ padding-right: $base-spacing-unit!important; padding-left:  $base-spacing-unit!important; }
+@mixin padding-src($namespace:"") {
 
-  .soft-half          { padding:       $half-spacing-unit!important; }
-  .soft-half--top     { padding-top:   $half-spacing-unit!important; }
-  .soft-half--right   { padding-right: $half-spacing-unit!important; }
-  .soft-half--bottom  { padding-bottom:$half-spacing-unit!important; }
-  .soft-half--left    { padding-left:  $half-spacing-unit!important; }
-  .soft-half--ends    { padding-top:   $half-spacing-unit!important; padding-bottom:$half-spacing-unit!important; }
-  .soft-half--sides   { padding-right: $half-spacing-unit!important; padding-left:  $half-spacing-unit!important; }
+  .#{$namespace}soft          	       { padding:       $base-spacing-unit!important; }
+  .#{$namespace}soft--top      	       { padding-top:   $base-spacing-unit!important; }
+  .#{$namespace}soft--right    	       { padding-right: $base-spacing-unit!important; }
+  .#{$namespace}soft--bottom   	       { padding-bottom:$base-spacing-unit!important; }
+  .#{$namespace}soft--left     	       { padding-left:  $base-spacing-unit!important; }
+  .#{$namespace}soft--ends     	       { padding-top:   $base-spacing-unit!important; padding-bottom:$base-spacing-unit!important; }
+  .#{$namespace}soft--sides    	       { padding-right: $base-spacing-unit!important; padding-left:  $base-spacing-unit!important; }
 
-  .soft-double          	{ padding:       double($base-spacing-unit)!important; }
-  .soft-double--top      	{ padding-top:   double($base-spacing-unit)!important; }
-  .soft-double--right    	{ padding-right: double($base-spacing-unit)!important; }
-  .soft-double--bottom   	{ padding-bottom:double($base-spacing-unit)!important; }
-  .soft-double--left     	{ padding-left:  double($base-spacing-unit)!important; }
-  .soft-double--ends     	{ padding-top:   double($base-spacing-unit)!important; padding-bottom:double($base-spacing-unit)!important; }
-  .soft-double--sides    	{ padding-right: double($base-spacing-unit)!important; padding-left:  double($base-spacing-unit)!important; }
+  .#{$namespace}soft-quarter           { padding:       quarter($base-spacing-unit)!important; }
+  .#{$namespace}soft-quarter--top      { padding-top:   quarter($base-spacing-unit)!important; }
+  .#{$namespace}soft-quarter--right    { padding-right: quarter($base-spacing-unit)!important; }
+  .#{$namespace}soft-quarter--bottom   { padding-bottom:quarter($base-spacing-unit)!important; }
+  .#{$namespace}soft-quarter--left     { padding-left:  quarter($base-spacing-unit)!important; }
+  .#{$namespace}soft-quarter--ends     { padding-top:   quarter($base-spacing-unit)!important; padding-bottom:quarter($base-spacing-unit)!important; }
+  .#{$namespace}soft-quarter--sides    { padding-right: quarter($base-spacing-unit)!important; padding-left:  quarter($base-spacing-unit)!important; }
 
-  .soft-grid          { padding:       $base-grid-gutter!important; }
-  .soft-grid--top     { padding-top:   $base-grid-gutter!important; }
-  .soft-grid--right   { padding-right: $base-grid-gutter!important; }
-  .soft-grid--bottom  { padding-bottom:$base-grid-gutter!important; }
-  .soft-grid--left    { padding-left:  $base-grid-gutter!important; }
-  .soft-grid--ends    { padding-top:   $base-grid-gutter!important; padding-bottom:$base-grid-gutter!important; }
-  .soft-grid--sides   { padding-right: $base-grid-gutter!important; padding-left:  $base-grid-gutter!important; }
+  .#{$namespace}soft-half              { padding:       halve($base-spacing-unit)!important; }
+  .#{$namespace}soft-half--top         { padding-top:   halve($base-spacing-unit)!important; }
+  .#{$namespace}soft-half--right       { padding-right: halve($base-spacing-unit)!important; }
+  .#{$namespace}soft-half--bottom      { padding-bottom:halve($base-spacing-unit)!important; }
+  .#{$namespace}soft-half--left        { padding-left:  halve($base-spacing-unit)!important; }
+  .#{$namespace}soft-half--ends        { padding-top:   halve($base-spacing-unit)!important; padding-bottom:halve($base-spacing-unit)!important; }
+  .#{$namespace}soft-half--sides       { padding-right: halve($base-spacing-unit)!important; padding-left:  halve($base-spacing-unit)!important; }
 
-  .hard           	{ padding:       0!important; }
-  .hard--top      	{ padding-top:   0!important; }
-  .hard--right    	{ padding-right: 0!important; }
-  .hard--bottom   	{ padding-bottom:0!important; }
-  .hard--left     	{ padding-left:  0!important; }
-  .hard--ends     	{ padding-top:   0!important; padding-bottom:0!important; }
-  .hard--sides    	{ padding-right: 0!important; padding-left:  0!important; }
+  .#{$namespace}soft-double            { padding:       double($base-spacing-unit)!important; }
+  .#{$namespace}soft-double--top       { padding-top:   double($base-spacing-unit)!important; }
+  .#{$namespace}soft-double--right     { padding-right: double($base-spacing-unit)!important; }
+  .#{$namespace}soft-double--bottom    { padding-bottom:double($base-spacing-unit)!important; }
+  .#{$namespace}soft-double--left      { padding-left:  double($base-spacing-unit)!important; }
+  .#{$namespace}soft-double--ends      { padding-top:   double($base-spacing-unit)!important; padding-bottom:double($base-spacing-unit)!important; }
+  .#{$namespace}soft-double--sides     { padding-right: double($base-spacing-unit)!important; padding-left:  double($base-spacing-unit)!important; }
+
+  .#{$namespace}soft-grid              { padding:       $base-grid-gutter!important; }
+  .#{$namespace}soft-grid--top         { padding-top:   $base-grid-gutter!important; }
+  .#{$namespace}soft-grid--right       { padding-right: $base-grid-gutter!important; }
+  .#{$namespace}soft-grid--bottom      { padding-bottom:$base-grid-gutter!important; }
+  .#{$namespace}soft-grid--left        { padding-left:  $base-grid-gutter!important; }
+  .#{$namespace}soft-grid--ends        { padding-top:   $base-grid-gutter!important; padding-bottom:$base-grid-gutter!important; }
+  .#{$namespace}soft-grid--sides       { padding-right: $base-grid-gutter!important; padding-left:  $base-grid-gutter!important; }
+
+  .#{$namespace}hard           	       { padding:       0!important; }
+  .#{$namespace}hard--top      	       { padding-top:   0!important; }
+  .#{$namespace}hard--right    	       { padding-right: 0!important; }
+  .#{$namespace}hard--bottom   	       { padding-bottom:0!important; }
+  .#{$namespace}hard--left     	       { padding-left:  0!important; }
+  .#{$namespace}hard--ends     	       { padding-top:   0!important; padding-bottom:0!important; }
+  .#{$namespace}hard--sides    	       { padding-right: 0!important; padding-left:  0!important; }
+}
+
+@each $alias, $condition in $breakpoints {
+
+  @if use-mq($alias, layout) {
+
+      @include media-query(#{$alias}) {
+        @include padding-src('#{$alias}--');
+      }
+
+    }
 }
