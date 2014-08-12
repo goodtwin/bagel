@@ -111,3 +111,32 @@ layout:
     include: true
   flexbox:
     include: true
+mediaquery:
+  palm:
+    include: true
+    widths: true
+    layout: true
+  lap:
+    include: true
+    widths: true
+    layout: true
+  lap-and-up:
+    include: true
+    widths: true
+    layout: true
+  portable:
+    include: true
+    widths: true
+    layout: true
+  desk:
+    include: true
+    widths: true
+    layout: true
+  desk-wide:
+    include: true
+    widths: true
+    layout: true
+  under-desk-wide:
+    include: true
+    widths: true
+    layout: true

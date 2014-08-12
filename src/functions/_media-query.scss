@@ -1,5 +1,5 @@
 /**
- * All Courtesy of Harry Robert's (@csswizardry) fantastic Inuit.css: https://github.com/csswizardry/inuit.css
+ * All Courtesy of Harry Robert's (@csswizardry) fantastic Inuit.css: https://github.com/inuitcss
  */
 /**
  * Media query mixin.
@@ -27,52 +27,29 @@
  *
  * We work out your end points for you:
  */
-$palm-end:   $lap-start - 1px;
-$lap-end:    $desk-start - 1px;
-$desk-end:   $desk-wide-start - 1px;
 
-@mixin media-query($media-query){
+@mixin included-media-query {
+    @each $alias, $condition in $breakpoints {
+        @if $mediaquery-#{$alias}-include == true {
 
-    @if $media-query == palm{
+        }
+    }
+}
 
-        @media only screen and (max-width:$palm-end) { @content; }
+@mixin media-query($mq) {
+
+    // Loop through the list of breakpoints we’ve provided in our settings file.
+    @each $alias, $condition in $breakpoints {
+
+        // If the media query we’ve specified has an alias and a condition...
+        @if $mq == $alias and $condition {
+
+            // ... spit it out here.
+            @media #{$condition} {
+                @content;
+            }
+
+        }
 
     }
-
-    @if $media-query == lap{
-
-        @media only screen and (min-width:$lap-start) and (max-width:$lap-end) { @content; }
-
-    }
-
-    @if $media-query == lap-and-up{
-
-        @media only screen and (min-width:$lap-start) { @content; }
-
-    }
-
-    @if $media-query == portable{
-
-        @media only screen and (max-width:$lap-end) { @content; }
-
-    }
-
-    @if $media-query == desk{
-
-        @media only screen and (min-width:$desk-start) { @content; }
-
-    }
-
-    @if $media-query == desk-wide{
-
-        @media only screen and (min-width: $desk-wide-start) { @content; }
-
-    }
-
-    @if $media-query == under-desk-wide{
-
-        @media only screen and (max-width: $desk-end) { @content; }
-
-    }
-
 }

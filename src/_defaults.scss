@@ -5,12 +5,12 @@
  * Debug mode will visually highlight any potential markup/accessibility quirks
  * in the browser. Set to `true` or `false`.
  */
-$debug-mode:        false!default;
+$debug-mode:           false!default;
 
 /*******************************
     Elements
 *******************************/
-$button-include:   false!default;
+$button-include:       false!default;
 $card-include:         false!default;
 $checkbox-include:     false!default;
 $divider-include:      false!default;
@@ -31,7 +31,7 @@ $step-include:         false!default;
 $accordion-include:    false!default;
 $card-include:         false!default;
 $grid-include:         false!default;
-$tab-include:        false!default;
+$tab-include:          false!default;
 $table-include:        false!default;
 
 /*******************************
@@ -39,7 +39,7 @@ $table-include:        false!default;
 *******************************/
 $dropdown-include:     false!default;
 $form-include:         false!default;
-$menu-include:        false!default;
+$menu-include:         false!default;
 $message-include:      false!default;
 $modal-include:        false!default;
 $nag-include:          false!default;
