@@ -1,5 +1,5 @@
 @import "popup";
 
-@if $popup-theme-prototype {
+@if use-theme(popup) {
   @include popup-prototype;
 }

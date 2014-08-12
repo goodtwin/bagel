@@ -1,5 +1,5 @@
 @import "card";
 
-@if $card-include {
+@if use(card) {
   @include card-src;
 }

@@ -1,5 +1,5 @@
 @import "popup";
 
-@if $popup-include {
+@if use(popup) {
   @include popup-src;
 }

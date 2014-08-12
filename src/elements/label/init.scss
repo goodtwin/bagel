@@ -1,5 +1,5 @@
 @import "label";
 
-@if $label-include {
+@if use(label) {
   @include label-src;
 }

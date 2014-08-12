@@ -1,5 +1,5 @@
 @import "segment";
 
-@if $segment-theme-prototype {
+@if use-theme(segment) {
   @include segment-prototype;
 }

@@ -1,5 +1,5 @@
 @import "step";
 
-@if $step-theme-prototype {
+@if use-theme(step) {
   @include step-prototype;
 }

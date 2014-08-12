@@ -1,38 +1,156 @@
 /*******************************
-    Elements
+    Debug
 *******************************/
-$button-theme-prototype:       false!default;
-$card-theme-prototype:         false!default;
-$checkbox-theme-prototype:     false!default;
-$divider-theme-prototype:      false!default;
-$icons-theme-prototype:        false!default;
-$image-theme-prototype:        false!default;
-$input-theme-prototype:        false!default;
-$label-theme-prototype:        false!default;
-$loader-theme-prototype:       false!default;
-$media-theme-prototype:        false!default;
-$progress-theme-prototype:     false!default;
-$reveal-theme-prototype:       false!default;
-$segment-theme-prototype:      false!default;
-$step-theme-prototype:         false!default;
+/**
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `false` or `false`.
+ */
+$debug-mode:           false!default;
 
 /*******************************
-    Collections
+    Components
 *******************************/
-$accordion-theme-prototype:    false!default;
-$grid-theme-prototype:         false!default;
-$tab-theme-prototype:          false!default;
-$table-theme-prototype:        false!default;
 
-/*******************************
-    Containers
-*******************************/
-$dropdown-theme-prototype:     false!default;
-$form-theme-prototype:         false!default;
-$menu-theme-prototype:         false!default;
-$message-theme-prototype:      false!default;
-$modal-theme-prototype:        false!default;
-$nag-theme-prototype:          false!default;
-$popup-theme-prototype:        false!default;
-$search-theme-prototype:       false!default;
-$sidebar-theme-prototype:      false!default;
+$globalConfig: (
+    --------------
+     Elements
+    --------------
+    button: (
+        include: false,
+    ),
+    card: (
+        include: false,
+    ),
+    checkbox: (
+        include: false,
+    ),
+    divider: (
+        include: false,
+    ),
+    icons: (
+        include: false,
+    ),
+    image: (
+        include: false,
+    ),
+    input: (
+        include: false,
+    ),
+    label: (
+        include: false,
+    ),
+    loader: (
+        include: false,
+    ),
+    media: (
+        include: false,
+    ),
+    progress: (
+        include: false,
+    ),
+    reveal: (
+        include: false,
+    ),
+    segment: (
+        include: false,
+    ),
+    step: (
+        include: false,
+    ),
+    --------------
+      Containers
+    --------------
+    dropdown: (
+        include: false,
+    ),
+    form: (
+        include: false,
+    ),
+    menu: (
+        include: false,
+    ),
+    message: (
+        include: false,
+    ),
+    modal: (
+        include: false,
+    ),
+    nag: (
+        include: false,
+    ),
+    popup: (
+        include: false,
+    ),
+    search: (
+        include: false,
+    ),
+    sidebar: (
+        include: false,
+    ),
+    --------------
+      Collections
+    --------------
+    accordion: (
+        include: false,
+    ),
+    grid: (
+        include: false,
+    ),
+    tab: (
+        include: false,
+    ),
+    table: (
+        include: false,
+    ),
+    -----------------
+      Layout Helpers
+    -----------------
+    layout: (
+        display: (
+            include: false
+        ),
+        flexbox: (
+            include: false
+        )
+    ),
+    ----------------
+      Media Query
+    ----------------
+    mediaquery: (
+        palm: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        lap: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        lap-and-up: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        portable: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        desk: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        desk-wide: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        under-desk-wide: (
+            include: false,
+            widths: false,
+            layout: false
+        )
+    )
+) !default;

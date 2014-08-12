@@ -20,11 +20,14 @@
   }
   @each $alias, $condition in $breakpoints {
 
-    @include media-query(#{$alias}) {
-      .accessibility--#{$alias},
-      .visuallyhidden--#{$alias}{
-          @include accessibility;
-      }
+    @if use-mq($alias) {
+
+        @include media-query(#{$alias}) {
+          .accessibility--#{$alias},
+          .visuallyhidden--#{$alias}{
+              @include accessibility;
+          }
+        }
     }
   }
 }

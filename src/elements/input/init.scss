@@ -1,5 +1,5 @@
 @import "input";
 
-@if $input-include {
+@if use(input) {
   @include input-src;
 }

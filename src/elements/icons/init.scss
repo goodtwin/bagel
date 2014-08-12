@@ -1,7 +1,7 @@
 @import "icons";
 @import "basic.icon";
 
-@if $icons-include {
+@if use(icons) {
   @include basic-icon-src;
   @include icons-src;
 }

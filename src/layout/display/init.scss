@@ -7,7 +7,7 @@
 @import "type";
 @import "visibility";
 
-@if $layout-display-include {
+@if use-layout(display) {
   @include clearfix-src;
   @include display-src;
   @include margin-src;

@@ -1,0 +1,15 @@
+@function use($component, $value: include) {
+    @return map-get(map-get($globalConfig, $component), $value);
+}
+
+@function use-theme($component, $theme: prototype) {
+	@return map-get(map-get(map-get($globalConfig, $component), theme), $theme);
+}
+
+@function use-mq($alias, $value: include) {
+	@return map-get(map-get(map-get($globalConfig, mediaquery), $alias), $value);
+}
+
+@function use-layout($type, $value: include) {
+	@return map-get(map-get(map-get($globalConfig, layout), $type), $value);
+}

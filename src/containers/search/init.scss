@@ -1,5 +1,5 @@
 @import "search";
 
-@if $search-include {
+@if use(search) {
   @include search-src;
 }

@@ -1,5 +1,5 @@
 @import "tab";
 
-@if $tab-theme-prototype {
+@if use-theme(tab) {
   @include tab-prototype;
 }

@@ -1,5 +1,5 @@
 @import "button";
 
-@if $button-theme-prototype {
+@if use-theme(button) {
   @include button-prototype;
 }

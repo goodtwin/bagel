@@ -1,5 +1,5 @@
 @import "search";
 
-@if $search-theme-prototype {
+@if use-theme(search) {
   @include search-prototype;
 }

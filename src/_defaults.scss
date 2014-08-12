@@ -3,53 +3,154 @@
 *******************************/
 /**
  * Debug mode will visually highlight any potential markup/accessibility quirks
- * in the browser. Set to `true` or `false`.
+ * in the browser. Set to `false` or `false`.
  */
 $debug-mode:           false!default;
 
 /*******************************
-    Elements
+    Components
 *******************************/
-$button-include:       false!default;
-$card-include:         false!default;
-$checkbox-include:     false!default;
-$divider-include:      false!default;
-$icons-include:        false!default;
-$image-include:        false!default;
-$input-include:        false!default;
-$label-include:        false!default;
-$loader-include:       false!default;
-$media-include:        false!default;
-$progress-include:     false!default;
-$reveal-include:       false!default;
-$segment-include:      false!default;
-$step-include:         false!default;
 
-/*******************************
-    Collections
-*******************************/
-$accordion-include:    false!default;
-$card-include:         false!default;
-$grid-include:         false!default;
-$tab-include:          false!default;
-$table-include:        false!default;
-
-/*******************************
-    Containers
-*******************************/
-$dropdown-include:     false!default;
-$form-include:         false!default;
-$menu-include:         false!default;
-$message-include:      false!default;
-$modal-include:        false!default;
-$nag-include:          false!default;
-$popup-include:        false!default;
-$search-include:       false!default;
-$sidebar-include:      false!default;
-
-
-/*******************************
-    Layout
-*******************************/
-$layout-display-include:   false!default;
-$layout-flexbox-include:   false!default;
+$globalConfig: (
+    --------------
+     Elements
+    --------------
+    button: (
+        include: false,
+    ),
+    card: (
+        include: false,
+    ),
+    checkbox: (
+        include: false,
+    ),
+    divider: (
+        include: false,
+    ),
+    icons: (
+        include: false,
+    ),
+    image: (
+        include: false,
+    ),
+    input: (
+        include: false,
+    ),
+    label: (
+        include: false,
+    ),
+    loader: (
+        include: false,
+    ),
+    media: (
+        include: false,
+    ),
+    progress: (
+        include: false,
+    ),
+    reveal: (
+        include: false,
+    ),
+    segment: (
+        include: false,
+    ),
+    step: (
+        include: false,
+    ),
+    --------------
+      Containers
+    --------------
+    dropdown: (
+        include: false,
+    ),
+    form: (
+        include: false,
+    ),
+    menu: (
+        include: false,
+    ),
+    message: (
+        include: false,
+    ),
+    modal: (
+        include: false,
+    ),
+    nag: (
+        include: false,
+    ),
+    popup: (
+        include: false,
+    ),
+    search: (
+        include: false,
+    ),
+    sidebar: (
+        include: false,
+    ),
+    --------------
+      Collections
+    --------------
+    accordion: (
+        include: false,
+    ),
+    grid: (
+        include: false,
+    ),
+    tab: (
+        include: false,
+    ),
+    table: (
+        include: false,
+    ),
+    -----------------
+      Layout Helpers
+    -----------------
+    layout: (
+        display: (
+            include: false
+        ),
+        flexbox: (
+            include: false
+        )
+    ),
+    ----------------
+      Media Query
+    ----------------
+    mediaquery: (
+        palm: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        lap: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        lap-and-up: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        portable: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        desk: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        desk-wide: (
+            include: false,
+            widths: false,
+            layout: false
+        ),
+        under-desk-wide: (
+            include: false,
+            widths: false,
+            layout: false
+        )
+    )
+) !default;

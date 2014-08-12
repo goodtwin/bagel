@@ -28,14 +28,6 @@
  * We work out your end points for you:
  */
 
-@mixin included-media-query {
-    @each $alias, $condition in $breakpoints {
-        @if $mediaquery-#{$alias}-include == true {
-
-        }
-    }
-}
-
 @mixin media-query($mq) {
 
     // Loop through the list of breakpoints we’ve provided in our settings file.

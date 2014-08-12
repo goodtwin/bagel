@@ -1,5 +1,5 @@
 @import "label";
 
-@if $label-theme-prototype {
+@if use-theme(label) {
   @include label-prototype;
 }

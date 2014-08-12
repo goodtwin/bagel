@@ -1,5 +1,5 @@
 @import "progress";
 
-@if $progress-theme-prototype {
+@if use-theme(progress) {
   @include progress-prototype;
 }

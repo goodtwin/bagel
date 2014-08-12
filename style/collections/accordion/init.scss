@@ -1,5 +1,5 @@
 @import "accordion";
 
-@if $accordion-theme-prototype {
+@if use-theme(accordion) {
   @include accordion-prototype;
 }

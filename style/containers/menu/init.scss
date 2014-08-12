@@ -1,5 +1,5 @@
 @import "menu";
 
-@if $menu-theme-prototype {
+@if use-theme(menu) {
   @include menu-prototype;
 }

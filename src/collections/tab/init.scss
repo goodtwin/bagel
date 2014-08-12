@@ -1,5 +1,5 @@
 @import "tab";
 
-@if $tab-include {
+@if use(tab) {
   @include tab-src;
 }

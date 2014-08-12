@@ -1,5 +1,5 @@
 @import "media";
 
-@if $media-theme-prototype {
+@if use-theme(media) {
   @include media-prototype;
 }

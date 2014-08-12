@@ -1,7 +1,7 @@
 @import "icons";
 @import "basic.icons";
 
-@if $icons-theme-prototype {
+@if use-theme(icons) {
   @include icons-prototype;
   @include basic-icons-prototype;
 }

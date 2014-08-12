@@ -1,5 +1,5 @@
 @import "nag";
 
-@if $nag-theme-prototype {
+@if use-theme(nag) {
   @include nag-prototype;
 }

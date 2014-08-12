@@ -37,7 +37,8 @@ module.exports = function (grunt) {
       style: {
         options: {
           name: "globalConfig",
-          cssFormat: "dash"
+          cssFormat: "dash",
+          useSassMaps: true
         },
         src: "config.yml",
         dest: [

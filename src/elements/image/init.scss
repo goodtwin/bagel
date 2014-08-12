@@ -1,5 +1,5 @@
 @import "image";
 
-@if $image-include {
+@if use(image) {
   @include image-src;
 }

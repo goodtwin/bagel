@@ -2,7 +2,7 @@
 @import "form-states";
 @import "form-variations";
 
-@if $form-include {
+@if use(form) {
   @include form-src;
   @include form-src-states;
   @include form-src-variations;

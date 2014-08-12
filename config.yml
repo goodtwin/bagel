@@ -133,7 +133,7 @@ mediaquery:
     widths: true
     layout: true
   desk-wide:
-    include: true
+    include: false
     widths: true
     layout: true
   under-desk-wide:

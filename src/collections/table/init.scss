@@ -1,5 +1,5 @@
 @import "table";
 
-@if $table-include {
+@if use(table) {
   @include table-src;
 }

@@ -1,5 +1,5 @@
 @import "sidebar";
 
-@if $sidebar-include {
+@if use(sidebar) {
   @include sidebar-src;
 }

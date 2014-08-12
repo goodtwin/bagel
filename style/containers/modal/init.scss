@@ -1,5 +1,5 @@
 @import "modal";
 
-@if $modal-theme-prototype {
+@if use-theme(modal) {
   @include modal-prototype;
 }

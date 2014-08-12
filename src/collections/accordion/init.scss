@@ -1,5 +1,5 @@
 @import "accordion";
 
-@if $accordion-include {
+@if use(accordion) {
   @include accordion-src;
 }
