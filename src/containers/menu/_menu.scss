@@ -562,37 +562,37 @@
   }
 
   .ui.menu.two.item .item {
-    @extend .one-half;
+    width: percentage(1/2);
   }
   .ui.menu.three.item .item {
-    @extend .one-third;
+    width: percentage(1/3);
   }
   .ui.menu.four.item .item {
-    @extend .one-quarter;
+    width: percentage(1/4);
   }
   .ui.menu.five.item .item {
-    @extend .one-fifth;
+    width: percentage(1/5);
   }
   .ui.menu.six.item .item {
-    @extend .one-sixth;
+    width: percentage(1/6);
   }
   .ui.menu.seven.item .item {
-    @extend .one-seventh;
+    width: percentage(1/7);
   }
   .ui.menu.eight.item .item {
-    @extend .one-eighth;
+    width: percentage(1/8);
   }
   .ui.menu.nine.item .item {
-    @extend .one-ninth;
+    width: percentage(1/9);
   }
   .ui.menu.ten.item .item {
-    @extend .one-tenth;
+    width: percentage(1/10);
   }
   .ui.menu.eleven.item .item {
     width: percentage(1/11)
   }
   .ui.menu.twelve.item .item {
-    @extend .one-twelfth;
+    width: percentage(1/12);
   }
 
   /*--------------
