@@ -3,13 +3,13 @@
 				Button
 	*******************************/
 	.ui.button {
-		background-color: #CCC;
-		color: #808080;
+		background-color: palette(neutral, mid);
+		color: palette(neutral, light);
 		font-size: 1rem;
 		text-transform: uppercase;
 		font-weight: bold;
 		font-style: normal;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		-webkit-tap-highlight-color: rgba(0,0,0, 0);
 	}
 
 	/*******************************
@@ -20,22 +20,21 @@
 			Active
 		---------------*/
 		&.active{
-			background-color: #EAEAEA;
+			background-color: palette(neutral, mid, 105);
 		}
 		/*--------------
 			Hover
 		---------------*/
 		&:hover,
 		&.active:hover  {
-			color: rgba(0, 0, 0, 0.7);
+			background-color: palette(neutral, mid, 110);
 		}
 		/*--------------
 			Down
 		---------------*/
 		&:active,
 		&.active:active {
-			background-color: #F1F1F1;
-			color: rgba(0, 0, 0, 0.7);
+			background-color: palette(neutral, mid, 120);
 		}
 		/*--------------
 			Loading
@@ -43,7 +42,7 @@
 		&.loading {
 			position: relative;
 			cursor: default;
-			background-color: #FFFFFF !important;
+			background-color: palette(neutral, light) !important;
 			color: transparent !important;
 			transition: all 0s linear;
 
@@ -68,9 +67,7 @@
 		&.disabled,
 		&.disabled:hover,
 		&.disabled.active {
-			background-color: #DDDDDD !important;
 			cursor: default;
-			color: rgba(0, 0, 0, 0.5) !important;
 			opacity: 0.3 !important;
 		}
 	}
@@ -83,32 +80,30 @@
 			Primary
 		--------------------*/
 		&.primary {
-			background-color: #D95C5C;
-			color: #FFFFFF;
+			background-color: palette(button, primary);
 
 			&:hover,
 			&.active {
-				background-color: #E75859;
+				background-color: palette(button, primary, 110);
 			}
 
 			&:active {
-				background-color: #D24B4C;
+				background-color: palette(button, primary, 105);
 			}
 		}
 		/*-------------------
 			Secondary
 		--------------------*/
 		&.secondary {
-			background-color: #00B5AD;
-			color: #FFFFFF;
+			background-color: palette(button, secondary);
 
 			&:hover,
 			&.active {
-				background-color: #009A93;
+				background-color: palette(button, secondary, 110);
 			}
 
 			&:active {
-				background-color: #00847E;
+				background-color: palette(button, secondary, 105);
 			}
 		}
 		/*-------------------
@@ -116,101 +111,118 @@
 		--------------------*/
 		/* Facebook */
 		&.facebook {
-			background-color: #3B579D;
-			color: #FFFFFF;
+			background-color: palette(social, facebook);
 
 			&:hover {
-				background-color: #3A59A9;
+				background-color: palette(social, facebook, 110);
 			}
 
 			&:active {
-				background-color: #334F95;
+				background-color: palette(social, facebook, 105);
 			}
 		}
 
 		/* Twitter */
 		&.twitter {
-			background-color: #4092CC;
-			color: #FFFFFF;
+			background-color: palette(social, twitter);
 
 			&:hover {
-				background-color: #399ADE;
-				color: #FFFFFF;
+				background-color: palette(social, twitter, 110);
 			}
 
 			&:active {
-				background-color: #3283BC;
-				color: #FFFFFF;
+				background-color: palette(social, twitter, 105);
 			}
 		}
 
 		/* Google Plus */
 		&.google.plus {
-			background-color: #D34836;
-			color: #FFFFFF;
+			background-color: palette(social, googleplus);
 
 			&:hover {
-				background-color: #E3432E;
+				background-color: palette(social, googleplus, 110);
 			}
 
 			&:active {
-				background-color: #CA3A27;
+				background-color: palette(social, googleplus, 105);
 			}
 		}
 
 		/* LinkedIn */
 		&.linkedin {
-			background-color: #1F88BE;
-			color: #FFFFFF;
+			background-color: palette(social, linkedin);
 
 			&:hover {
-				background-color: #1394D6;
+				background-color: palette(social, linkedin, 110);
 			}
 
 			&:active {
-				background-color: #1179AE;
+				background-color: palette(social, linkedin, 105);
 			}
 		}
 
 		/* YouTube */
 		&.youtube {
-			background-color: #CC181E;
-			color: #FFFFFF;
+			background-color: palette(social, youtube);
 
 			&:hover {
-				background-color: #DF0209;
+				background-color: palette(social, youtube, 110);
 			}
 
 			&:active {
-				background-color: #A50006;
+				background-color: palette(social, youtube, 105);
 			}
 		}
 
 		/* Instagram */
 		&.instagram {
-			background-color: #49769C;
-			color: #FFFFFF;
+			background-color: palette(social, instagram);
 
 			&:hover {
-				background-color: #4781B1;
+				background-color: palette(social, instagram, 110);
 			}
 
 			&:active {
-				background-color: #38658A;
+				background-color: palette(social, instagram, 105)
 			}
 		}
 
 		/* Pinterest */
 		&.pinterest {
-			background-color: #00ACED;
-			color: #FFFFFF;
+			background-color: palette(social, pinterest);
 
 			&:hover {
-				background-color: #00B9FF;
+				background-color: palette(social, pinterest, 110);
 			}
 
 			&:active {
-				background-color: #009EDA;
+				background-color: palette(social, pinterest, 105);
+			}
+		}
+
+		/* Positive */
+		&.positive {
+			background-color: palette(info, success);
+
+			&:hover {
+				background-color: palette(info, success, 110);
+			}
+
+			&:active {
+				background-color: palette(info, success, 105);
+			}
+		}
+
+		/* negative */
+		&.negative {
+			background-color: palette(info, error);
+
+			&:hover {
+				background-color: palette(info, error, 110);
+			}
+
+			&:active {
+				background-color: palette(info, error, 105);
 			}
 		}
 		/*--------------
@@ -271,11 +283,10 @@
 		/* Toggle (Modifies active state to give affordances) */
 		&.toggle .active.button,
 		&.toggle.active {
-			background-color: #5BBD72 !important;
-			color: #FFFFFF !important;
+			background-color: palette(info, success) !important;
 
 			&:hover {
-				background-color: #58CB73 !important;
+				background-color: palette(info, success, 110) !important;
 			}
 		}
 		/*--------------

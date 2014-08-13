@@ -2,7 +2,7 @@
         Divided
 -----------------------*/
 @mixin grid-prototype {
-    
+
   .ui.divided.grid > .column:not(.row),
   .ui.divided.grid > .row > .column {
     box-shadow:
@@ -34,16 +34,16 @@
   -----------------------*/
 
   .ui.celled.grid {
-    box-shadow: 0px 0px 0px 1px #DFDFDF;
+    box-shadow: 0px 0px 0px 1px palette(neutral, mid);
   }
   .ui.celled.grid > .row,
   .ui.celled.grid > .column.row,
   .ui.celled.grid > .column.row:first-child {
-    box-shadow: 0px -1px 0px 0px #DFDFDF;
+    box-shadow: 0px -1px 0px 0px palette(neutral, mid);
   }
   .ui.celled.grid > .column:not(.row),
   .ui.celled.grid > .row > .column {
-    box-shadow: -1px 0px 0px 0px #DFDFDF;
+    box-shadow: -1px 0px 0px 0px palette(neutral, mid);
   }
   .ui.celled.grid > .column:first-child,
   .ui.celled.grid > .row > .column:first-child {
