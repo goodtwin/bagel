@@ -125,7 +125,7 @@ module.exports = function (grunt) {
     },
     watch: {
       hbs: {
-        files: ['<%= globalConfig.docs  %>/**/*.hbs'],
+        files: ['**/*.hbs'],
         tasks: ['assemble:docs']
       },
       docs: {

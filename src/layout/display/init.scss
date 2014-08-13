@@ -1,19 +1,23 @@
 @import "clearfix";
 @import "display";
-@import "margin";
-@import "padding";
+@import "fullbleed";
 @import "position";
 @import "size";
+@import "spacing";
 @import "type";
 @import "visibility";
+@import "widths";
+
+$display-namespace: ''!default;
 
 @if use-layout(display) {
   @include clearfix-src;
   @include display-src;
-  @include margin-src;
-  @include padding-src;
+  @include fullbleed-src;
   @include position-src;
   @include size-src;
+  @include spacing-src($display-namespace);
   @include type-src;
   @include visibility-src;
+  @include widths-src($display-namespace);
 }

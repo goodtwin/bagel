@@ -1,12 +1,6 @@
 @mixin flexbox-src {
   body {
 
-    // sets up entire body to be flex ready
-    &[fullbleed] {
-      margin: 0;
-      height: 100vh;
-    }
-
     /* flex box basics */
     [layout][horizontal], [layout][vertical] {
       display: flex;
