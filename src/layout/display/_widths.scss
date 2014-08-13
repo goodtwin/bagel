@@ -1,4 +1,4 @@
-@mixin widths-src($display-namespace:"") {
+@mixin widths-internal-src($display-namespace:"") {
   /*------------------------------------*\
       #WIDTHS
   \*------------------------------------*/
@@ -208,13 +208,17 @@
   } // Close fractions @if.
 }
 
-@each $alias, $condition in $breakpoints {
+@mixin widths-src($display-namespace:"") {
+  @include widths-internal-src($display-namespace);
 
-  @if use-mq($alias, widths) {
+  @each $alias, $condition in $breakpoints {
 
-      @include media-query(#{$alias}) {
-        @include widths-src('#{$alias}--');
+    @if use-mq($alias, widths) {
+
+        @include media-query(#{$alias}) {
+          @include widths-internal-src('#{$alias}--');
+        }
+
       }
-
-    }
+  }
 }
