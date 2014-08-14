@@ -58,6 +58,10 @@ dropdown:
   include: true
   theme:
     prototype: true
+example:
+  include: true
+  theme:
+    styleguide: true
 form:
   include: true
   theme:
