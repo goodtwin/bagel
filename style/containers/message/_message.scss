@@ -6,10 +6,10 @@
 	.ui.message {
 		min-height: 18px;
 		margin: 1em 0em;
-		background-color: #EFEFEF;
+		background-color: palette(neutral, light);
 		padding: 1em;
 		line-height: 1.33;
-		color: rgba(0, 0, 0, 0.6);
+		color: palette(neutral, dark);
 		transition:
 			opacity 0.1s ease,
 			color 0.1s ease,
@@ -107,8 +107,8 @@
 	---------------*/
 
 	.ui.inverted.message {
-		background-color: rgba(255, 255, 255, 0.05);
-		color: rgba(255, 255, 255, 0.95);
+		background-color: palette(neutral, dark);
+		color: palette(neutral, light);
 	}
 
 
@@ -130,14 +130,14 @@
 	/* Success Text Block */
 	.ui.success.message,
 	.ui.positive.message {
-		background-color: #DEFCD5;
-		color: #52A954;
+		background-color: palette(info, success, 5);
+		color: palette(info, success);
 	}
 	/* Error Text Block */
 	.ui.error.message,
 	.ui.negative.message {
-		background-color: #F1D7D7;
-		color: #A95252;
+		background-color: palette(info, error, 5);
+		color: palette(info, error);
 	}
 
 

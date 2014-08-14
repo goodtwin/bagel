@@ -7,8 +7,8 @@
 		text-align: left;
 		width: 90%;
 		margin-left: -45%;
-		background-color: #FFFFFF;
-		border: 1px solid #DDDDDD;
+		background-color: palette(neutral, light);
+		border: 1px solid palette(neutral, light);
 		border-radius: 5px;
 		user-select: text;
 	}
@@ -26,7 +26,7 @@
 		font-size: 1.25em;
 		top: -1.75em;
 		right: -1.75em;
-		color: #FFFFFF;
+		color: palette(neutral, light);
 	}
 	.ui.modal > .close:hover {
 		opacity: 1;
@@ -50,7 +50,7 @@
 
 	.ui.modal > .content {
 		padding: 2em;
-		background-color: #F4F4F4;
+		background-color: palette(neutral, light);
 	}
 	.ui.modal > .content > .left:not(.ui) {
 		padding-right: 1.5%;
@@ -120,7 +120,7 @@
 			margin-left: -46%;
 		}
 		.ui.modal > .close {
-			color: rgba(0, 0, 0, 0.8);
+			color: palette(neutral, dark);
 			top: 1.5rem;
 			right: 1rem;
 		}
@@ -158,7 +158,7 @@
 	.ui.basic.modal {
 		background-color: transparent;
 		border: none;
-		color: #FFFFFF;
+		color: palette(neutral, light);
 	}
 	.ui.basic.modal > .close {
 		top: 1.5rem;

@@ -7,7 +7,7 @@
 		transition:
 			border-radius 0.1s ease,
 			width 0.2s ease;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
 	/*******************************
@@ -19,7 +19,7 @@
 	---------------*/
 
 	.ui.dropdown .menu {
-		background-color: #FFFFFF;
+		background-color: palette(neutral, light);
 		font-size: 0.875em;
 		text-shadow: none;
 		box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
@@ -64,9 +64,9 @@
 
 	.ui.dropdown .menu .item {
 		border: none;
-		border-top: 1px solid rgba(0, 0, 0, 0.05);
+		border-top: 1px solid palette(neutral, mid);
 		font-size: 0.875em;
-		color: rgba(0, 0, 0, 0.75);
+		color: palette(neutral, dark);
 		padding: 0.85em 1em !important;
 		font-size: 0.875rem;
 		text-transform: none;
@@ -106,13 +106,13 @@
 
 	/* Menu Item Hover */
 	.ui.dropdown .menu .item:hover {
-		background-color: rgba(0, 0, 0, 0.02);
+		background-color: palette(neutral, light, 110);
 	}
 
 	/* Menu Item Active */
 	.ui.dropdown .menu .active.item {
 		box-shadow: none;
-		background-color: rgba(0, 0, 0, 0.06) !important;
+		background-color: palette(neutral, mid) !important;
 		border-left: none;
 		border-color: transparent !important;
 		box-shadow: none;
@@ -121,11 +121,11 @@
 	/* Default Text */
 	.ui.dropdown > .default.text,
 	.ui.default.dropdown > .text {
-		color: rgba(0, 0, 0, 0.5);
+		color: palette(neutral, dark);
 	}
 	.ui.dropdown:hover > .default.text,
 	.ui.default.dropdown:hover > .text {
-		color: rgba(0, 0, 0, 0.8);
+		color: palette(neutral, dark);
 	}
 
 	/*******************************
@@ -147,10 +147,10 @@
 	/* Displays like a select box */
 
 	.ui.selection.dropdown {
-		background-color: #FFFFFF;
+		background-color: palette(neutral, light);
 		padding: 0.5em 1em;
 		line-height: 1.33;
-		color: rgba(0, 0, 0, 0.8);
+		color: palette(neutral, dark);
 		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
 		border-radius: 0.3125em !important;
 	}
@@ -168,7 +168,7 @@
 
 	.ui.selection.dropdown .menu {
 		max-height: 312px;
-		box-shadow: 0px 1px 0px 1px #E0E0E0;
+		box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 0.325em 0.325em;
 	}
 	.ui.selection.dropdown .menu img {
@@ -181,7 +181,7 @@
 		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2) !important;
 	}
 	.ui.selection.dropdown:hover .menu {
-		box-shadow: 0px 1px 0px 1px #D3D3D3;
+		box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.2);
 	}
 
 	/* Visible */
@@ -234,7 +234,7 @@
 		height: 0.5em;
 		box-shadow: -1px -1px 0px 1px rgba(0, 0, 0, 0.05);
 		background-image: none;
-		background-color: #FFFFFF;
+		background-color: palette(neutral, light);
 		transform: rotate(45deg);
 	}
 
