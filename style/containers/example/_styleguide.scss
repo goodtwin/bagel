@@ -1,7 +1,9 @@
 @mixin example-styleguide {
 
 .ui.example {
-	background-color: transparent;	
+	border-bottom: 1px solid palette(neutral, mid);
+	padding: 20px 0;
+	margin: 20px 0;	
 }
 
 }
