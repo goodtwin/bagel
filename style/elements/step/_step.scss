@@ -32,7 +32,6 @@
 	*******************************/
 
 	.ui.vertical.steps .step {
-		border-radius: 0em;
 		padding: 1em 2em;
 	}
 	.ui.vertical.steps .step:first-child {
@@ -56,19 +55,11 @@
 
 	.ui.steps {
 		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-		border-radius: 0.3125rem;
 
 		.step {
 
 			&:first-child {
 				padding-left: 1.35em;
-				border-radius: 0.3125em 0em 0em 0.3125em;
-			}
-			&:last-child {
-				border-radius: 0em 0.3125em 0.3125em 0em;
-			}
-			&:only-child {
-				border-radius: 0.3125em;
 			}
 		}
 	}
@@ -140,26 +131,10 @@
 	*******************************/
 
 	/* Attached */
-	.attached.ui.steps {
-		border-radius: 0.3125em 0.3125em 0em 0em;
-	}
-	.attached.ui.steps .step:first-child {
-		border-radius: 0.3125em 0em 0em 0em;
-	}
-	.attached.ui.steps .step:last-child {
-		border-radius: 0em 0.3125em 0em 0em;
-	}
 
 	/* Bottom Side */
 	.bottom.attached.ui.steps {
 		margin-top: -1px;
-		border-radius: 0em 0em 0.3125em 0.3125em;
-	}
-	.bottom.attached.ui.steps .step:first-child {
-		border-radius: 0em 0em 0em 0.3125em;
-	}
-	.bottom.attached.ui.steps .step:last-child {
-		border-radius: 0em 0em 0.3125em 0em;
 	}
 
 	/*******************************

@@ -8,12 +8,10 @@
 		height: 35px;
 		background-color: palette(neutral, light);
 		padding: 5px;
-		border-radius: 0.3125em;
 	}
 
 	.ui.progress .bar {
 		background-color: palette(neutral, mid);
-		border-radius: 3px;
 		transition:
 			width 1s ease-in-out,
 			background-color 1s ease-out;
@@ -45,7 +43,6 @@
 
 	.ui.active.progress .bar::after {
 		background: palette(neutral, light);
-		border-radius: 3px;
 		animation: progress-active 2s ease-out infinite;
 	}
 
@@ -85,20 +82,12 @@
 	.ui.progress.attached .bar {
 		height: 3px;
 		padding: 0px;
-		border-radius: 0em 0em 0.3125em 0.3125em;
-	}
-	.ui.progress.attached .bar {
-		border-radius: 0em;
 	}
 
 	/* top attached */
 	.ui.progress.top.attached,
 	.ui.progress.top.attached .bar {
 		top: -2px;
-		border-radius: 0.3125em 0.3125em 0em 0em;
-	}
-	.ui.progress.top.attached .bar {
-		border-radius: 0em;
 	}
 
 	/*--------------

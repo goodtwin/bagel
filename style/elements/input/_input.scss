@@ -19,7 +19,6 @@
 		background-color: palette(neutral, light);
 		border: 1px solid palette(neutral, mid);
 		color: palette(neutral, dark);
-		border-radius: 0.3125em;
 		transition:
 			background-color 0.3s ease-out,
 			box-shadow 0.2s ease,
@@ -118,7 +117,6 @@
 		width: 2.6em;
 		padding-top: 0.82em;
 		text-align: center;
-		border-radius: 0em 0.3125em 0.3125em 0em;
 		transition: opacity 0.3s ease-out;
 	}
 	.ui.icon.input input {
@@ -130,9 +128,6 @@
 	}
 
 	/* Left Side */
-	.ui.left.icon.input > .icon {
-		border-radius: 0.3125em 0em 0em 0.3125em;
-	}
 	.ui.left.icon.input > .circular.icon {
 		right: auto;
 		left: 0.5em;

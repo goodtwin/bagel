@@ -4,10 +4,8 @@
 	*******************************/
 
 	.ui.dropdown {
-		transition:
-			border-radius 0.1s ease,
-			width 0.2s ease;
-			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		transition:width 0.2s ease;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
 	/*******************************
@@ -23,7 +21,6 @@
 		font-size: 0.875em;
 		text-shadow: none;
 		box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-		border-radius: 0px 0px 0.325em 0.325em;
 		transition: opacity 0.2s ease;
 	}
 
@@ -57,10 +54,6 @@
 	/*--------------
 		Sub Menu
 	---------------*/
-
-	.ui.dropdown .menu .menu {
-		border-radius: 0 0.325em 0.325em 0em !important;
-	}
 
 	.ui.dropdown .menu .item {
 		border: none;
@@ -152,7 +145,6 @@
 		line-height: 1.33;
 		color: palette(neutral, dark);
 		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
-		border-radius: 0.3125em !important;
 	}
 
 	.ui.selection.dropdown > .dropdown.icon {
@@ -169,7 +161,6 @@
 	.ui.selection.dropdown .menu {
 		max-height: 312px;
 		box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.2);
-		border-radius: 0px 0px 0.325em 0.325em;
 	}
 	.ui.selection.dropdown .menu img {
 		height: 2.5em;
@@ -191,9 +182,6 @@
 	}
 
 	/* Active */
-	.ui.active.selection.dropdown {
-		border-radius: 0.3125em 0.3125em 0em 0em !important;
-	}
 
 	/*--------------
 		Inline
@@ -211,12 +199,10 @@
 	.ui.inline.dropdown .menu {
 		cursor: auto;
 		margin-top: 0.25em;
-		border-radius: 0.325em;
 	}
 
 	.ui.floating.dropdown .menu {
 		margin-top: 0.5em !important;
-		border-radius: 0.325em;
 	}
 
 	/*--------------
@@ -226,7 +212,6 @@
 
 	.ui.pointing.dropdown .menu {
 		margin-top: 0.75em;
-		border-radius: 0.325em;
 	}
 
 	.ui.pointing.dropdown .menu:after {

@@ -12,7 +12,6 @@
 		font-size: 1em;
 		text-align: center;
 		color: palette(neutral, light);
-		border-radius: 0px 0px 5px 5px;
 		transition: 0.2s background;
 	}
 
@@ -38,9 +37,6 @@
 		Bottom
 	---------------*/
 
-	.ui.bottom.nag {
-		border-radius: 5px 5px 0px 0px;
-	}
 
 	/*--------------
 		White
@@ -63,7 +59,4 @@
 			Groups
 	*******************************/
 
-	.ui.nags .nag {
-		border-radius: 0px;
-	}
 }

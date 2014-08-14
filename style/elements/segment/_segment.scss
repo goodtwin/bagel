@@ -8,18 +8,15 @@
 		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 		margin: 1em 0em;
 		padding: 1em;
-		border-radius: 5px 5px 5px 5px;
 	}
 
 	.ui.vertical.segment {
 		background-color: transparent;
-		border-radius: 0px;
 		box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 	}
 
 	.ui.horizontal.segment {
 		background-color: transparent;
-		border-radius: 0px;
 		box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
 	}
 
@@ -39,7 +36,6 @@
 	.ui.grid.segment,
 	.ui.grid .ui.segment.row,
 	.ui.grid .ui.segment.column {
-		border-radius: 0em;
 		box-shadow: none;
 		border: none;
 	}
@@ -140,7 +136,6 @@
 		bottom: -1px;
 		margin-top: 1em;
 		margin-bottom: 0em;
-		border-radius: 5px 5px 0px 0px;
 	}
 
 	.ui.segment.bottom.attached {
@@ -148,6 +143,5 @@
 		bottom: 0px;
 		margin-top: 0em;
 		margin-bottom: 1em;
-		border-radius: 0px 0px 5px 5px;
 	}
 }

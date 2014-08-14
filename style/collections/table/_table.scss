@@ -23,18 +23,6 @@
 		color: rgba(0, 0, 0, 0.8);
 		padding: 0.5em 0.7em;
 	}
-	.ui.table thead th:first-child {
-		border-radius: 5px 0px 0px 0px;
-	}
-	.ui.table thead th:last-child {
-		border-radius: 0px 5px 0px 0px;
-	}
-	.ui.table tfoot th:first-child {
-		border-radius: 0px 0px 0px 5px;
-	}
-	.ui.table tfoot th:last-child {
-		border-radius: 0px 0px 5px 0px;
-	}
 
 	/* Table Cells */
 	.ui.table td {
