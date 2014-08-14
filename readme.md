@@ -21,7 +21,7 @@ Some of the challenges Bagel seeks to solve:
 
 ## Bagel vs. [Bootstrap](http://getbootstrap.com/)/[Foundation](http://foundation.zurb.com/)/[Semantic UI](http://semantic-ui.com/)
 
-We've loved using all of these frameworks - but they did not address some key needs we had in nearly every interface we created. Our needs often went beyond the basic customization provided by these frameworks. We enjoyed not starting from scratch, but we wanted to build additional components. We wanted a best practice system for creating theme and new components. We needed helpers at the layout level to combine components into a UI. Additionally we wanted to build living style guides along with our css.
+We've loved using all of these frameworks - but they did not address some key needs we had in nearly every interface we created. Our needs often went beyond the basic customization provided by these frameworks. We enjoyed not starting from scratch, but we wanted to build additional components. We wanted a best practice system for creating chrome and new components. We needed helpers at the layout level to combine components into a UI. Additionally we wanted to build living style guides along with our css.
 
 We started with the ideas of these UI frameworks, authoring frameworks like [inuit.css](https://github.com/inuitcss), [Compass](http://compass-style.org/) and [Bourbon](http://bourbon.io/), and best practices from industry experts like [Nicole Sullivan](http://www.stubbornella.org/content/) to create Bagel.
 
@@ -37,7 +37,9 @@ Are you part an corporation that needs a set of corporate components, style guid
 
 Bagel requires node v0.10 installed.
 
-  npm install && grunt
+```
+npm install && grunt
+```
 
 The Bagel distribution includes a style guide documenting all the default components, a prototype theme, and a distribution css that the team can use to prototype UI immediately.
 
