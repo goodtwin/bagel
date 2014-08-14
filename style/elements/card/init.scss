@@ -1,4 +1,4 @@
-@import "card";
+@import "prototype";
 
 @if use-theme(card) {
   @include card-prototype;

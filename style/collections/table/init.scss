@@ -1,4 +1,4 @@
-@import "table";
+@import "prototype";
 
 @if use-theme(table) {
   @include table-prototype;

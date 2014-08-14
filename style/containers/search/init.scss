@@ -1,4 +1,4 @@
-@import "search";
+@import "prototype";
 
 @if use-theme(search) {
   @include search-prototype;

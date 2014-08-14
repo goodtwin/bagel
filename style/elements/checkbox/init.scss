@@ -1,4 +1,4 @@
-@import "checkbox";
+@import "prototype";
 
 @if use-theme(checkbox) {
   @include checkbox-prototype;

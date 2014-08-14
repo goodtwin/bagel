@@ -1,4 +1,4 @@
-@import "image";
+@import "prototype";
 
 @if use-theme(image) {
   @include image-prototype;

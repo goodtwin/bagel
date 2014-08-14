@@ -1,4 +1,4 @@
-@import "nag";
+@import "prototype";
 
 @if use-theme(nag) {
   @include nag-prototype;

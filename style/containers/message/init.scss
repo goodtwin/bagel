@@ -1,4 +1,4 @@
-@import "message";
+@import "prototype";
 
 @if use-theme(message) {
   @include message-prototype;

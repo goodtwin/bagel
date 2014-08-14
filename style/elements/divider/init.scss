@@ -1,4 +1,4 @@
-@import "divider";
+@import "prototype";
 
 @if use-theme(divider) {
   @include divider-prototype;

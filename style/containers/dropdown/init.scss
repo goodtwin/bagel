@@ -1,4 +1,4 @@
-@import "dropdown";
+@import "prototype";
 
 @if use-theme(dropdown) {
   @include dropdown-prototype;
