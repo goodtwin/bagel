@@ -49,12 +49,12 @@
 	.ui.media .content .date {
 		float: right;
 		padding-left: 1em;
-		color: rgba(0, 0, 0, 0.4);
+		color: palette(neutral, dark);
 	}
 
 	/* Summary */
 	.ui.media .content .summary {
-		color: rgba(0, 0, 0, 0.75);
+		color: palette(neutral, dark);
 	}
 	.ui.media .content .summary img {
 		margin-right: 0.25em;
@@ -66,7 +66,7 @@
 	.ui.media .content .extra {
 		margin: 1em 0em 0em;
 		padding: 0.5em 0em 0em;
-		color: rgba(0, 0, 0, 0.5);
+		color: palette(neutral, dark);
 	}
 
 	.ui.media .content .extra.images {

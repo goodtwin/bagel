@@ -26,8 +26,8 @@
 			width: 1em;
 			height: 1em;
 			border-radius: 4px;
-			background: #FFFFFF;
-			border: 1px solid #cecece;
+			background: palette(neutral, light);
+			border: 1px solid palette(neutral, mid);
 			transition: background-color 0.3s ease;
 		}
 
@@ -42,16 +42,16 @@
 
 		/*--- Inside Label ---*/
 		label {
-			color: rgba(0, 0, 0, 0.6);
+			color: palette(neutral, dark);
 			transition: color 0.2s ease;
 
 			&:hover {
-				color: rgba(0, 0, 0, 0.8);
+				color: palette(neutral, dark);
 			}
 		}
 
 		input:focus + label {
-			color: rgba(0, 0, 0, 0.8);
+			color: palette(neutral, dark);
 		}
 
 		/*--- Outside Label  ---*/
@@ -81,7 +81,7 @@
 		/*--- Down ---*/
 		.box:active::before,
 		label:active::before {
-			background-color: #F5F5F5;
+			background-color: palette(neutral, light);
 		}
 
 		/*--- Focus ---*/
@@ -121,7 +121,7 @@
 			left: 0.2em;
 			width: 0.6em;
 			height: 0.6em;
-			background-color: #555555;
+			background-color: palette(neutral, mid);
 		}
 		/*--------------
 			Slider
@@ -135,7 +135,7 @@
 				top: 0.5em;
 				width: 3em;
 				height: 2px;
-				background-color: rgba(0, 0, 0, 0.1);
+				background-color: palette(neutral, dark);
 			}
 
 			/* Button */
@@ -177,13 +177,13 @@
 			/* Off Color */
 			.box:after,
 			label:after {
-				background-color: #D95C5C;
+				background-color: palette(info, error);
 			}
 
 			/* On Color */
 			input:checked + .box:after,
 			input:checked + label:after {
-				background-color: #89B84C;
+				background-color: palette(info, success);
 			}
 		}
 		/*--------------
@@ -198,7 +198,7 @@
 				/* Switch */
 				&:before {
 					top: -0.25em;
-					background-color: #FFFFFF;
+					background-color: palette(neutral, light);
 					width: 3em;
 					height: 1.5em;
 					box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
@@ -210,7 +210,7 @@
 					top: 0.15em;
 					width: 0.75em;
 					height: 0.75em;
-					background-color: #D95C5C;
+					background-color: palette(info, error);
 					border-radius: 50rem;
 					transition:
 						background 0.3s ease 0s,
@@ -222,13 +222,13 @@
 			/* Active */
 			&:active .box:before,
 			&:active label:before {
-				background-color: #F5F5F5;
+				background-color: palette(neutral, light);
 			}
 
 			/* Active */
 			input:checked + .box:after,
 			input:checked + label:after {
-				background-color: #89B84C;
+				background-color: palette(info, success);
 			}
 		}
 	}

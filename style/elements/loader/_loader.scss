@@ -47,10 +47,10 @@
 
 	.ui.dimmer .ui.text.loader,
 	.ui.inverted.text.loader {
-		color: rgba(255, 255, 255, 0.8);
+		color: palette(neutral, light);
 	}
 	.ui.inverted.dimmer .ui.text.loader {
-		color: rgba(0, 0, 0, 0.8);
+		color: palette(neutral, dark);
 	}
 
 	/* Tiny Size */

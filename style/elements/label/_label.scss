@@ -5,10 +5,10 @@
 
 	.ui.label {
 		margin: -0.25em 0.25em 0em;
-		background-color: #E8E8E8;
-		border-color: #E8E8E8;
+		background-color: palette(neutral, light);
+		border-color: palette(neutral, light);
 		padding: 0.5em 0.8em;
-		color: rgba(0, 0, 0, 0.65);
+		color: palette(neutral, dark);
 		text-transform: uppercase;
 		font-weight: normal;
 		border-radius: 0.325em;
@@ -87,13 +87,13 @@
 
 	a.ui.labels .label:hover,
 	a.ui.label:hover {
-		background-color: #E0E0E0;
-		border-color: #E0E0E0;
-		color: rgba(0, 0, 0, 0.7);
+		background-color: palette(neutral, light);
+		border-color: palette(neutral, light);
+		color: palette(neutral, dark);
 
 		&:before {
-			background-color: #E0E0E0;
-			color: rgba(0, 0, 0, 0.7);
+			background-color: palette(neutral, light);
+			color: palette(neutral, dark);
 		}
 	}
 
@@ -125,7 +125,7 @@
 		&:after {
 			left: -0.25em;
 			margin-top: -0.3em;
-			background-color: #FFFFFF;
+			background-color: palette(neutral, light);
 			width: 0.55em;
 			height: 0.55em;
 			box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
@@ -232,7 +232,7 @@
 
 	.ui.inverted.labels .label,
 	.ui.inverted.label {
-		color: #FFFFFF !important;
+		color: palette(neutral, light) !important;
 	}
 
 	/*-------------------
@@ -270,7 +270,7 @@
 	}
 	/*--- Above ---*/
 	.ui.pointing.label:before {
-		background-color: #E8E8E8;
+		background-color: palette(neutral, light);
 	}
 	.ui.pointing.label,
 	.ui.pointing.above.label {

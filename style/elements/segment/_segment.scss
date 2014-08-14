@@ -4,7 +4,7 @@
 	*******************************/
 
 	.ui.segment {
-		background-color: #FFFFFF;
+		background-color: palette(neutral, light);
 		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 		margin: 1em 0em;
 		padding: 1em;
@@ -70,7 +70,7 @@
 
 	.ui.disabled.segment {
 		opacity: 0.8;
-		color: #DDDDDD;
+		color: palette(neutral, mid);
 	}
 
 	/*******************************
@@ -86,15 +86,15 @@
 		box-shadow: none;
 	}
 	.ui.inverted.segment .segment {
-		color: rgba(0, 0, 0, 0.7);
+		color: palette(neutral, dark);
 	}
 	.ui.inverted.segment .inverted.segment {
-		color: #FFFFFF;
+		color: palette(neutral, light);
 	}
 	.ui.inverted.segment,
 	.ui.primary.inverted.segment {
-		background-color: #222222;
-		color: #FFFFFF;
+		background-color: palette(neutral, dark);
+		color: palette(neutral, light);
 	}
 
 	/*-------------------
@@ -102,29 +102,27 @@
 	--------------------*/
 
 	.ui.primary.segment {
-		background-color: #FFFFFF;
-		color: #555555;
+		background-color: palette(neutral, light, 120);
+		color: palette(neutral, mid, 120);
 	}
 
 	.ui.secondary.segment {
-		background-color: #FAF9FA;
-		color: #777777;
+		background-color: palette(neutral, light, 110);
+		color: palette(neutral, mid, 110);
 	}
 
 	.ui.tertiary.segment {
-		background-color: #EBEBEB;
-		color: #B0B0B0;
+		background-color: palette(neutral, light);
+		color: palette(neutral, mid);
 	}
 
 	.ui.secondary.inverted.segment {
-		background-color: #555555;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
-		color: #FAFAFA;
+		background-color: palette(neutral, mid);
+		color: palette(neutral, light);
 	}
 	.ui.tertiary.inverted.segment {
-		background-color: #555555;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
-		color: #EEEEEE;
+		background-color: palette(neutral, mid, 110);
+		color: palette(neutral, light, 110);
 	}
 
 	/*-------------------
@@ -134,7 +132,7 @@
 	.ui.segment.attached {
 		top: -1px;
 		bottom: -1px;
-		box-shadow: 0px 0px 0px 1px #DDDDDD;
+		box-shadow: 0px 0px 0px 1px palette(neutral, mid);
 	}
 
 	.ui.top.attached.segment {
