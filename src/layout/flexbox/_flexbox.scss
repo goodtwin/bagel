@@ -98,7 +98,7 @@
     [flex][twelve] {
       flex: 12;
     }
-
+    
     /* alignment in main axis */
     [layout][start-justified] {
       -ms-flex-pack: start;
@@ -137,6 +137,10 @@
 
     [layout][center] {
       align-items: center;
+    }
+
+    [layout][stretch-items] {
+      align-items: stretch;
     }
 
     [layout][end] {
