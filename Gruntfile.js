@@ -41,9 +41,9 @@ module.exports = function (grunt) {
           cssFormat: "dash",
           useSassMaps: true
         },
-        src: "config.yml",
+        src: "<%= globalConfig.style  %>/config.yml",
         dest: [
-          "style/config.scss"
+          "<%= globalConfig.style  %>/config.scss"
         ]
       },
       styleguide: {
@@ -185,9 +185,10 @@ require('load-grunt-tasks')(grunt);
 grunt.loadNpmTasks('assemble');
 
 grunt.registerTask('default', ['build']);
-grunt.registerTask('distcss', ['sass:dist', 'myth:dist']);
-grunt.registerTask('docs', ['shared_config:styleguide', 'copy:docs', 'sass:styleguide', 'myth:styleguide', 'assemble']);
+grunt.registerTask('distcss', ['shared_config:style', 'sass:dist', 'myth:dist']);
+grunt.registerTask('styleguidecss', ['shared_config:styleguide', 'sass:styleguide', 'myth:styleguide']);
+grunt.registerTask('docs', ['copy:docs', 'styleguidecss', 'assemble']);
 grunt.registerTask('dist', ['clean:dist', 'copy:dist', 'distcss', 'cssmin']);
-grunt.registerTask('build', ['clean', 'shared_config:style', 'dist', 'clean:docs', 'copy:docs', 'doccss', 'assemble']);
+grunt.registerTask('build', ['clean', 'dist', 'docs']);
 
 };
