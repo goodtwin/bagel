@@ -6,3 +6,4 @@ dist/
 npm-debug.log
 .sass-cache/
 style/config.scss
+styleguide/config.scss

@@ -5,7 +5,8 @@ module.exports = function (grunt) {
   var globalConfig = {
     src: 'src',
     style: 'style',
-    docs: 'docs',
+    styleguide: 'styleguide',
+    docs: 'styleguide/docs',
     dist: {
       root: ' dist',
       docs: 'dist/docs',
@@ -44,6 +45,17 @@ module.exports = function (grunt) {
         dest: [
           "style/config.scss"
         ]
+      },
+      styleguide: {
+        options: {
+          name: "styleguideConfig",
+          cssFormat: "dash",
+          useSassMaps: true
+        },
+        src: "styleguide/styleguide.yml",
+        dest: [
+          "styleguide/config.scss"
+        ]
       }
     },
     sass: {
@@ -52,12 +64,9 @@ module.exports = function (grunt) {
           '<%= globalConfig.dist.style  %>/stylesheets/style.css': '<%= globalConfig.style  %>/style.scss'
         }
       },
-      docs: {
-        options: {
-          sourceComments: 'map',
-        },
+      styleguide: {
         files : {
-          '<%= globalConfig.dist.docs  %>/assets/stylesheets/docs.css': '<%= globalConfig.docs  %>/assets/stylesheets/docs.scss'
+          '<%= globalConfig.dist.docs  %>/stylesheets/styleguide.css': '<%= globalConfig.styleguide  %>/styleguide.scss'
         }
       },
     },
@@ -70,9 +79,14 @@ module.exports = function (grunt) {
           '<%= globalConfig.dist.style  %>/stylesheets/style.css': '<%= globalConfig.dist.style  %>/stylesheets/style.css'
         }
       },
+      styleguide: {
+        files: {
+          '<%= globalConfig.dist.docs  %>/stylesheets/styleguide.css': '<%= globalConfig.dist.docs  %>/stylesheets/styleguide.css'
+        }
+      },
       docs: {
         files: {
-          '<%= globalConfig.dist.docs  %>/assets/stylesheets/docs.css': '<%= globalConfig.dist.docs  %>/assets/stylesheets/docs.css'
+          '<%= globalConfig.dist.docs  %>/stylesheets/docs.css': '<%= globalConfig.dist.docs  %>/stylesheets/docs.css'
         }
       }
     },
@@ -109,8 +123,7 @@ module.exports = function (grunt) {
           cwd: '<%= globalConfig.src  %>/assets',
           src: ['**/*'],
           dest: '<%= globalConfig.dist.style  %>/assets/'
-        }
-        ]
+        }]
       },
       docs: {
         files: [
@@ -118,6 +131,18 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= globalConfig.docs  %>/assets/',
           src: ['images/*', 'javascripts/**/*.js', 'stylesheets/*.css'],
+          dest: '<%= globalConfig.dist.docs  %>/assets/'
+        },
+        {
+          expand: true,
+          cwd: '<%= globalConfig.docs  %>/assets/',
+          src: ['stylesheets/*.css'],
+          dest: '<%= globalConfig.dist.docs  %>/'
+        },
+        {
+          expand: true,
+          cwd: '<%= globalConfig.src  %>/assets/',
+          src: ['images/*', 'icons/*'],
           dest: '<%= globalConfig.dist.docs  %>/assets/'
         }
         ]
@@ -161,8 +186,8 @@ grunt.loadNpmTasks('assemble');
 
 grunt.registerTask('default', ['build']);
 grunt.registerTask('distcss', ['sass:dist', 'myth:dist']);
-grunt.registerTask('doccss', ['sass:docs', 'myth:docs']);
+grunt.registerTask('docs', ['shared_config:styleguide', 'copy:docs', 'sass:styleguide', 'myth:styleguide', 'assemble']);
 grunt.registerTask('dist', ['clean:dist', 'copy:dist', 'distcss', 'cssmin']);
-grunt.registerTask('build', ['clean', 'shared_config', 'dist', 'clean:docs', 'copy:docs', 'doccss', 'assemble']);
+grunt.registerTask('build', ['clean', 'shared_config:style', 'dist', 'clean:docs', 'copy:docs', 'doccss', 'assemble']);
 
 };

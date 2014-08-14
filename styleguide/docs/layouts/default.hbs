@@ -14,9 +14,8 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 
-<link rel="stylesheet" type="text/css" href="/dist/style/stylesheets/style.css">
-<link rel="stylesheet" type="text/css" href="/dist/docs/assets/stylesheets/docs.css">
-
+<link rel="stylesheet" type="text/css" href="/dist/docs/stylesheets/styleguide.css">
+<link rel="stylesheet" type="text/css" href="/dist/docs/stylesheets/docs.css">
 
 </head>
 
@@ -25,7 +24,7 @@
 		{{#each tags}}
 			<div class="header item">{{capitalizeEach tag }}</div>
 			{{#withSort pages "data.title"}}
-				<div class="item">
+				<div class="link item">
 					<a href="{{relative ../../page.dest this.dest}}">{{ data.title }}</a>
 				</div>
 			{{/withSort}}
