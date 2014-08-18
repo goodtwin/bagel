@@ -144,6 +144,13 @@ module.exports = function (grunt) {
           cwd: '<%= globalConfig.src  %>/assets/',
           src: ['images/*', 'icons/*'],
           dest: '<%= globalConfig.dist.docs  %>/assets/'
+        },
+        {
+          expand : true,
+          flatten: true,
+          cwd    : 'src/',
+          src    : '**/*.js',
+          dest : '<%= globalConfig.dist.docs  %>/assets/javascripts/src'
         }
         ]
       }

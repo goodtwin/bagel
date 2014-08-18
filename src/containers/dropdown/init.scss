@@ -1,5 +1,7 @@
 @import "dropdown";
+@import "transition";
 
 @if use(dropdown) {
   @include dropdown-src;
+  @include transition-src;
 }
