@@ -1,0 +1,40 @@
+---
+css         : 'positioning'
+title       : 'Position'
+description : 'Position Trumps for positioning concerns in the app.'
+tags:
+  - layout
+---
+<div class="main container mv++">
+  <h2 class="ui dividing header pt++">Position Trumps</h2>
+  <p class="ui ignored message">Position trumps often indicate a need for component updates to chrome. Use sparingly.</p>
+
+  <div class="follow example">
+    <h4 class="ui header">Fixed Position</h4>
+    <div class="mv+" viewport positioning top align style="background: whitesmoke;border:1px solid grey;width: 300px; height: 100px;">Fixed Positioning</div>
+  </div>
+
+  <div class="follow example">
+    <h4 class="ui header">Absolute Positioning</h4>
+    <div containment positioning style="border: 1px solid grey; width: 400px; height: 300px;">
+      <div ancestor positioning top left align>Top Left Aligned</div>
+      <div ancestor positioning top right align>Top Right Aligned</div>
+      <div ancestor positioning bottom left align>Bottom Left Aligned</div>
+      <div ancestor positioning bottom right align>Bottom Right Aligned</div>
+    </div>
+  </div>
+
+  <h3 class="ui dividing header">Layout Patterns</h3>
+
+  <div class="follow example">
+    <h4 class="ui header">Margin with Absolute Positioning</h4>
+    <p class="ui ignored message">Use margin to move positioned items</p>
+    <div containment positioning style="border: 1px solid grey; width: 400px; height: 300px;">
+      <div class="ml-" ancestor positioning top left align>Top Left Aligned</div>
+      <div class="mt+ mr+" ancestor positioning top right align>Top Right Aligned</div>
+      <div class="mb" ancestor positioning bottom left align>Bottom Left Aligned</div>
+      <div class="mb--" ancestor positioning bottom right align>Bottom Right Aligned</div>
+    </div>
+  </div>
+
+</div>
