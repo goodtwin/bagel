@@ -166,11 +166,11 @@ module.exports = function (grunt) {
       },
       docsass: {
         files: ['<%= globalConfig.docs  %>/src/assets/stylesheets/*'],
-        tasks: ['doccss']
+        tasks: ['docs']
       },
       sass: {
         files: ['<%= globalConfig.src  %>/**/*.scss', '<%= globalConfig.style  %>/**/*.scss'],
-        tasks: ['distcss', 'copy:docs', 'doccss']
+        tasks: ['distcss', 'copy:docs', 'styleguidecss']
       },
       js: {
         files: ['<%= globalConfig.src  %>/**/*.js'],
