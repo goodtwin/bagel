@@ -2,6 +2,7 @@
 @import "clearfix";
 @import "display";
 @import "fullbleed";
+@import "position";
 @import "size";
 @import "spacing";
 @import "type";
@@ -15,6 +16,7 @@ $display-namespace: ''!default;
   @include clearfix-src;
   @include display-src;
   @include fullbleed-src;
+  @include position-src;
   @include size-src;
   @include spacing-src($display-namespace);
   @include type-src;

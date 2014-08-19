@@ -1,0 +1,35 @@
+@mixin position-src {
+  [positioning] {
+
+    &[viewport] {
+      position: fixed;
+      z-index: 3;
+    }
+    &[offset], &[containment] {
+      position: relative;
+      z-index: 1;
+    }
+    &[ancestor] {
+      position: absolute;
+      z-index: 2;
+    }
+    &[auto] {
+      position: static;
+    }
+    &[align] {
+
+      &[top] {
+        top: 0;
+      }
+      &[bottom] {
+        bottom: 0;
+      }
+      &[right] {
+        right: 0;
+      }
+      &[left] {
+        left: 0;
+      }
+    }
+  }
+}

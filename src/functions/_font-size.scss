@@ -10,23 +10,41 @@
     font-size: $base-font-size;
   }
 
-  h1,.alpha{
-      @include font-size($h1-size);
+  h1 {
+    @include font-size($h1-size);
   }
-  h2,.beta{
-      @include font-size($h2-size);
+  h2 {
+    @include font-size($h2-size);
   }
-  h3,.gamma{
-      @include font-size($h3-size);
+  h3 {
+    @include font-size($h3-size);
   }
-  h4,.delta{
-      @include font-size($h4-size);
+  h4 {
+    @include font-size($h4-size);
   }
-  h5,.epsilon{
-      @include font-size($h5-size);
+  h5 {
+    @include font-size($h5-size);
   }
-  h6,.zeta{
-      @include font-size($h6-size);
+  h6 {
+    @include font-size($h6-size);
+  }
+  .alpha {
+    @include font-size-important($h1-size);
+  }
+  .beta{
+      @include font-size-important($h2-size);
+  }
+  .gamma{
+      @include font-size-important($h3-size);
+  }
+  .delta{
+      @include font-size-important($h4-size);
+  }
+  .epsilon{
+      @include font-size-important($h5-size);
+  }
+  .zeta{
+      @include font-size-important($h6-size);
   }
 
   /**
@@ -34,13 +52,13 @@
    * promos, etc.
    */
   .giga{
-      @include font-size($giga-size);
+      @include font-size-important($giga-size);
   }
   .mega{
-      @include font-size($mega-size);
+      @include font-size-important($mega-size);
   }
   .kilo{
-      @include font-size($kilo-size);
+      @include font-size-important($kilo-size);
   }
 
   /**
@@ -48,10 +66,10 @@
    */
   .smallprint,
   .milli{
-      @include font-size($milli-size);
+      @include font-size-important($milli-size);
   }
   .micro{
-      @include font-size($micro-size);
+      @include font-size-important($micro-size);
   }
 
 }
@@ -62,6 +80,11 @@
  *
    `@include font-size(10px);`
  */
+@mixin font-size-important($font-size, $line-height:true){
+    font-size:$font-size !important;
+    font-size:($font-size / $base-font-size)*1rem !important;
+}
+
 @mixin font-size($font-size, $line-height:true){
     font-size:$font-size;
     font-size:($font-size / $base-font-size)*1rem;
